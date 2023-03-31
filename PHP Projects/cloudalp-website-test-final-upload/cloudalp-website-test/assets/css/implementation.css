@@ -1,0 +1,186 @@
+.row{margin-right:0;margin-left:0;}
+.model-line-container .steps-container.step-1 {
+    top: 120px;
+    left: 50%;
+}
+.model-line-container .steps-container.step-2 {
+    top: 370px;
+    left: 80%;
+}
+.model-line-container .steps-container.step-3 {
+    top: 700px;
+    left: 60%;
+}
+.model-line-container .steps-container.step-4 {
+    top: 640px;
+    left: 30%;
+}
+.model-line-container .steps-container.step-5 {
+    top: 950px;
+    left: 0;
+}
+.model-line-container .steps-container.step-6 {
+    top: 1250px;
+    left: 20%;
+}
+.model-line-container .steps-container.step-7 {
+    top: 1470px;
+    left: 45%;
+}
+.model-line-container .steps-container {
+    position: absolute;
+    width: 100%;
+}
+.model-line-container .model-text {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+}
+.model-line-container .steps-container .step {
+    position: relative;
+    background-color: var(--color23);
+    max-width: 250px;
+	min-height:202px;
+    padding: 48px;
+    -webkit-box-shadow: 24px 2px 43px 0px var(--color175);
+    -moz-box-shadow: 24px 2px 43px 0px var(--color175);
+    box-shadow: 24px 2px 43px 0px var(--color175);
+    
+    transition: 2s background cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: 2s background cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+
+
+.model-line-container .steps-container .step .number {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size_70);
+    line-height: 70px;
+    color: var(--color176);
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+.model-line-container svg {
+    height: 1260px;
+    position: absolute;
+    top: 210px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+.model-line-container svg path {
+    fill: none;
+    stroke: var(--color174);
+    stroke-miterlimit: 10;
+}
+.model-line-container {
+    position: relative;
+    height: 1700px;
+    width: 100%;
+}
+.model-line-container .step h2 {
+    font-size: var(--font-size_24);
+    margin: 0;
+}
+.model-line-container .step h3 {
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size_11);
+	margin:0;
+    margin-top: 5px;
+}
+@media (max-width: 1199px) {
+	.model-line-container .steps-container{
+	position: unset;
+    display: inline-block;
+    width: auto;
+    margin: 30px;
+	}
+	.model-line-container{height:auto;}
+	.model-line-container svg{display:none;}
+}
+.benefits-picto svg {
+    width: 65px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+.benefits-picto svg path {
+    fill: none;
+    stroke: var(--color1);
+    stroke-linejoin: round;
+    stroke-width: 7px;
+}
+
+/* .benefits-picto svg path .  */
+.benefits-picto{
+	margin-bottom:40px;
+}
+.benefits-picto p{
+	color: var(--color172);
+    font-weight: var(--font-weight-500);
+    line-height: normal;
+}
+.other-benefits-info{margin-bottom:35px;}
+.other-benefits-info p{
+	max-width:90%;
+	color: var(--color172);
+    font-weight: var(--font-weight-500);
+    line-height: normal;
+}
+.other-benefits-info svg path {
+    fill: none;
+    stroke: var(--color173);
+    stroke-miterlimit: 10;
+}
+.other-benefits-info svg {
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    height: 16px;
+}
+
+.benefits{margin: 10% 0;}
+.btn-maincolor::before {
+    width: 101% !important;
+  }
+  
+  .main-button-content a {
+    font-size: 20px !important;
+  }
+  
+  .main-button-content a:hover {
+    color: var(--color1) !important;
+  }
+  .implementation_banner_new{
+      background-position: center top !important;
+      background-size: cover !important;
+  }
+  .implementation_banner_layout{
+    opacity: 0.6 !important; 
+}
+@media screen and (min-width:992px) {
+    .custom-data-padding{
+        padding-right: 10% !important;
+
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .custom-data-padding{
+        padding-right: 10% !important;
+        
+    }
+    
+}
+@media (min-width:768px) and (max-width:992px) {
+    .custom-data-padding{
+        padding-right: 5% !important;
+        
+    }
+    
+}
+/* .custom-add-new-css{
+    color: var(--color210) !important;
+    font-weight: bold !important;
+} */

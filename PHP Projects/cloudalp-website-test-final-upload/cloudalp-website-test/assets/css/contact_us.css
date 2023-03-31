@@ -1,0 +1,96 @@
+.page_title{
+	background-attachment:fixed;
+	padding-top:100px;
+	padding-bottom:60px;
+	margin-bottom: 5%;
+}
+.page_title h1{
+	color:var(--color14);
+
+}
+.addressInfo{
+	padding:7% 0;
+}
+.addressInfo .social-address a{
+	display:block;
+}
+.addressInfo .social-address i{
+	padding-right:10px;
+}
+.addressInfo .social-icons{
+	padding-top:15px;
+}
+.addressInfo .social-icons a{
+	display:inline-block;
+}
+.addressInfo .social-icons a:before{
+	font-size:var(--font-size_20);
+}
+/* #contact_modal .next-fields{display:none;} */
+#contact_modal [name="user-name"]{
+	font-size:var(--font-size_35);
+	height:70px;
+}
+#contact_modal [name="user-name"]::-webkit-input-placeholder { /* Edge */
+  color: var(--color11);
+}
+
+#contact_modal [name="user-name"]:-ms-input-placeholder { /* Internet Explorer */
+  color: var(--color11);
+}
+
+#contact_modal [name="user-name"]::placeholder {
+  color: var(--color11);
+}
+#contact_modal form p {
+    margin-bottom: 10px;
+}
+
+#contact_modal form p:last-of-type {
+    margin-bottom: 0;
+}
+
+#contact_modal form textarea {
+    max-height: 145px;
+}
+
+#contact_modal form .forms-width-50 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 677px) {
+    #contact_modal form .forms-width-50 {
+        margin-bottom: 10px;
+    }
+}
+
+#contact_modal form .forms-width-50 p {
+    width: 100%;
+}
+
+@media (min-width: 678px) {
+    #contact_modal form .forms-width-50 p {
+        width: 50%;
+    }
+    #contact_modal form .forms-width-50 p:not(:last-child) {
+        padding-right: 10px;
+    }
+}
+.ds .contact-form.transparent-background .form-control {
+    border-color: var(--color22);
+}
+.contact-form-submit {
+    margin-top: 30px;
+}
+.career-location-section .row .col-md-6{
+    padding: 6%;
+}
+.btn-maincolor:hover{
+    color:var(--color1) !important  ;
+}
+@media screen and (max-width:768px) {
+    #contact_modal{
+        margin-top: 25px;
+    }
+}

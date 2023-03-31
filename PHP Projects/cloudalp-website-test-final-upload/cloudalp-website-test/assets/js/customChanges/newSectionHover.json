@@ -1,0 +1,29 @@
+{
+    "newSection":[
+        {
+            "id":"business",
+            "heading":"Do you work with new startups or small businesses?",
+            "p-content":"<p>Yes, we love working with local businesses or new <a href=\"#\">startups</a> that are new to market. In fact, we work with many <a href=\"#\">small businesses</a> that are building their online presence from scratch. We have tailor-made services available for small businesses that are looking for an affordable website design that can scale as their business grows.</p>"
+
+        },
+        {
+            "id":"designing",
+            "heading":"How much input can I have into the design process?",
+            "p-content":"<p>Our web design process always begins with a deep dive into your organization, brand, mission, goals and more. We then collaborate with you to build a project overview document and creative blueprint that will guide the website design and development. </p> <p>Working with a website design and development company shouldn’t be challenging. We’ll guide you through the web design process and ensure your new design showcases your brand exactly how you had imagined. </p>"
+
+        },
+        {
+            "id":"maintainance",
+            "heading":"Do you provide maintenance services?",
+            "p-content":"<p>Yes, we can <a href=\"#\">maintain your WordPress website</a> and ensure it is kept secure. When you choose FreshySites for your WordPress maintenance, we’ll provide everything you need to keep your website in perfect working order. This includes: </p>",
+             "ul-li-content":" <ul class=\"description-details-in-ul\"> <li>Plugin updates and management on a recurring basis (usually quarterly)</li> <li>Theme updates to the most recent stable version</li> <li>30 minutes of troubleshooting, ensuring every update goes smoothly</li> <li>Ongoing accountability from FreshySites, ensuring your site is the most up to date as possible</li> </ul>"
+
+        },
+        {
+            "id":"website",
+            "heading":"Can you host my website?",
+            "p-content":"<p>Yes, as part of our website design services, we provide <a href=\"https://freshysites.com/wordpress/hosting/\">ongoing hosting</a>  via our <a href=\"https://freshysites.com/wordpress/managed/\">WordPress managed infrastructure</a>. Our streamlined CDN, automated <a href=\"https://freshysites.com/wordpress/backups/\">backups</a>  hardened <a href=\"https://freshysites.com/ssl/\">SSL</a>, and constant <a href=\"https://freshysites.com/wordpress/security/\">security audits</a> ensure your site is always up-to-date, secure, and available quickly for your visitors. </p>"
+
+        }
+    ]
+}

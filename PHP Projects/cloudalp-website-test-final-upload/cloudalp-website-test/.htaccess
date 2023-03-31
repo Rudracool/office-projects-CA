@@ -1,0 +1,67 @@
+Options -MultiViews +FollowSymlinks -Indexes
+
+<IfModule mod_deflate.c>
+         AddOutputFilterByType DEFLATE application/javascript
+         AddOutputFilterByType DEFLATE application/rss+xml
+         AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+         AddOutputFilterByType DEFLATE application/x-font
+         AddOutputFilterByType DEFLATE application/x-font-opentype
+         AddOutputFilterByType DEFLATE application/x-font-otf
+         AddOutputFilterByType DEFLATE application/x-font-truetype
+         AddOutputFilterByType DEFLATE application/x-font-ttf
+         AddOutputFilterByType DEFLATE application/x-javascript
+         AddOutputFilterByType DEFLATE application/xhtml+xml
+         AddOutputFilterByType DEFLATE application/xml
+         AddOutputFilterByType DEFLATE font/opentype
+         AddOutputFilterByType DEFLATE font/otf
+         AddOutputFilterByType DEFLATE font/ttf
+         AddOutputFilterByType DEFLATE image/svg+xml
+         AddOutputFilterByType DEFLATE image/x-icon
+         AddOutputFilterByType DEFLATE text/css
+         AddOutputFilterByType DEFLATE text/html
+         AddOutputFilterByType DEFLATE text/javascript
+         AddOutputFilterByType DEFLATE text/plain
+          AddOutputFilterByType DEFLATE text/xml
+          AddOutputFilterByType DEFLATE application/json
+
+
+
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+ 
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/avif "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+     ExpiresByType text/css "access plus 1 month"
+</IfModule>
+<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|svg|webp|avif|js|css|swf)$">
+        Header set Cache-Control "max-age=84600, public"
+</filesMatch>
+
+
+<IfModule mod_security.c>
+SecFilterEngine Off
+SecFilterScanPOST Off
+</IfModule>
+
+ErrorDocument 500 /cloudalp-website-test/errorPage/errorPage500.php
+ErrorDocument 404 /cloudalp-website-test/errorPage/errorPage404.php
+ErrorDocument 401 /cloudalp-website-test/errorPage/errorPage401.php
+ErrorDocument 403 /cloudalp-website-test/errorPage/errorPage403.php
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^suitecommerce\.html$ /NetsuiteSuiteCommerce.php [L]
+ AddType application/x-httpd-php .htm .html
+<IfModule mod_env.c>
+SetEnv SEO_SUPPORT 1
+
+</IfModule>
+</IfModule>
+

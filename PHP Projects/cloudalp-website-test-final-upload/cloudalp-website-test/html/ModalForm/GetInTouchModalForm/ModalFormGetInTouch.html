@@ -1,0 +1,142 @@
+ <link rel="stylesheet" href="html/ModalForm/GetInTouchModalForm/modal-form-get-in-touch.css?v=<?php //echo time(); ?>">
+ <!-- <link rel="stylesheet" href="html/ModalForm/GetInTouchModalForm/modal-form-get-in-touch.min.css?v=<?php echo time(); ?>"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <div class="custom-Modal-application-Data">
+    <div class="button-modal">
+        <a type="button" class="closebtn custom-a-close-modal" data-dismiss="modal"><i class="fa fa-times"></i></a>
+      </div>
+      <div class="modal-header">
+        <div class="custom-header">
+          <div class="h1-cntent-heading" data-action="h1-cntent-heading">
+            <h1 data-dynamic="h1">Get In Touch</h1>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body" data-action="modal-body">
+        <form class="modal-form-content" id="formCustomContent" novalidate="novalidate" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="exampleInputName">Full Name</label>
+            <input type="text" name="user-name" class="form-control" id="exampleInputName"
+              placeholder="Enter your name and surname" aria-required="true" aria-invalid="false">
+            <span class="ErrorMsg"></span>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1" required="required">Email address</label>
+            <input type="email" name="user-email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Enter your email address" aria-required="true" aria-invalid="false">
+            <span class="ErrorMsg emailAddress">
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="example-tel-input" class=" col-form-label">Telephone</label>
+            <div class="">
+              <input class="form-control" name="tel" 
+                type="tel" placeholder="1-(555)-555-5555" pattern="\d*" id="example-tel-input" aria-required="true"
+                aria-invalid="false">
+              <span class="ErrorMsg phoneNumber"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Company Name</label>
+            <input type="text" name="address" class="form-control" id="inputAddress" placeholder="Company Name"
+              aria-required="true" aria-invalid="false">
+            <span class="ErrorMsg"></span>
+          </div>
+          <div class="form-group">
+            <label for="selectyourService">Select a Service</label>
+             <select name="selectyourService" class="form-select" id="select-Your-Service">
+                <option  selected="true" disabled="disabled">Select a Service</option>
+                <option  value="implementation">NetSuite Implementation</option>
+                <option  value="support">NetSuite Support</option>
+                <option  value="scripting">NetSuite Scripting</option>
+                <option  value="customization">NetSuite Customizaiton</option>
+                <option  value="integration">NetSuite Integration</option>
+                <option  value="suiteCommerce">NetSuite SuiteCommerce</option>
+             </select>
+            <span class="ErrorMsg"></span>
+          </div>
+          <div class="form-group">
+              <label for="Message">Message</label>
+              <textarea name="user-message" cols="1" rows="1" aria-required="true"
+				class=" form-control" aria-invalid="false"
+				placeholder="What's on your mind? "></textarea>
+          </div>
+          <input type="hidden" name="token" value="FsWga4&amp;@f6aw">
+          
+
+          <div class="anchor-tag-for-login text-center button-padding custom-button-form">
+            <button type="submit" data-action="cust"
+              class="wpcf7-form-control wpcf7-submit btn btn-maincolor btn-short ml-0 mt-40">Send Us</button>
+          </div>
+
+        </form>
+        <div class="dynamic-message"></div>
+      </div>
+  </div>
+
+  <style>
+    #select-Your-Service option{
+      font-family: Visuelt;
+    }
+    #select-Your-Service{
+      background-repeat: no-repeat;
+      background-size: 25px;
+      background-position: 100% 100%;
+      background-image: url("data:image/svg+xml;utf8,<svg width='2000px' height='2000px' fill='%4b4b4b' xmlns='http://www.w3.org/2000/svg'><path d='M1075 352q0 -13 -10 -23l-50 -50q-10 -10 -23 -10t-23 10l-393 393l-393 -393q-10 -10 -23 -10t-23 10l-50 50q-10 10 -10 23t10 23l466 466q10 10 23 10t23 -10l466 -466q10 -10 10 -23z'/></svg>");
+      /* transition: background-image 0.3s ease-in-out; */
+    }
+  </style>
+  <script>
+
+      $('#formCustomContent').on('submit',function(e){
+          e.preventDefault();
+          var $form = $(this);
+           $($form).find('.contact-form-respond').remove();
+            $($form).find('[aria-required="true"]').each(function (index) {
+               var $thisRequired = $(this);
+                    if (!$thisRequired.val().length) {
+                        $thisRequired.addClass('invalid').on('focus', function () {
+                         $thisRequired.removeClass('invalid');
+                        });
+                    }
+            });
+            if ($form.find('[aria-required="true"]').hasClass('invalid')) {
+                return;
+            }
+            let formData = new FormData(document.querySelector("#formCustomContent"));
+
+                    jQuery.ajax({
+                        url: "mail.php",
+                        type: "POST",
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        beforeSend: function(){
+                           $($form).find('[data-action="cust"]').text('Processing...');
+                        },
+                        complete:function(){
+                           $($form).find('[data-action="cust"]').text('send us');
+                        },
+                        success: function (data, textStatus, jqXHR) {
+                          $('[data-action="modal-body"]').find('.dynamic-message').html('<div class="contact-form-respond color-main mt-20">' + data + '</div>');
+                          $('[data-action="h1-cntent-heading"]').find('[data-dynamic="h1"]').html('<i style="color:var(--color211);" class="fa fa-check-circle"></i> Thank You')
+                         
+                          //cleaning form
+                          var $formErrors = $form.find('.form-errors');
+                          if (!$formErrors.length) {
+                            $form[0].reset();
+                          }
+                          $($form).hide();
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            //if fails 
+                            $('[data-action="modal-body"]').find('.dynamic-message').html('<div class="contact-form-respond color-main mt-20">Mail cannot be sent. You need PHP server to send mail.</div>')
+                           
+                        }
+                    });
+      })
+         
+  </script>

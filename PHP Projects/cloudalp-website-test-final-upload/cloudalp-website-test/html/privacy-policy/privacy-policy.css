@@ -1,0 +1,88 @@
+.privacy-policy-content {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .privacy-policy-content .container .col-md-12.col-12.col-xs-12 {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .privacy-policy-content {
+    padding-top: 90px;
+  }
+}
+
+.privacy-policy-content .main-content-policy .p-content-margin {
+  margin-bottom: 0 !important;
+}
+
+.privacy-policy-content .main-content-policy .ul-padding-bottom .padding-bottom-add {
+  margin-bottom: 20px;
+}
+
+.privacy-policy-content .main-content-policy h1 {
+  font-size: 45px;
+  color: var(--color1);
+}
+
+@media screen and (max-width: 992px) {
+  .privacy-policy-content .main-content-policy h1 {
+    font-size: 40px;
+  }
+}
+
+.privacy-policy-content .main-content-policy h3 {
+  font-size: 31px !important;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  .privacy-policy-content .main-content-policy h3 {
+    font-size: 24px !important;
+  }
+}
+
+.privacy-policy-content .main-content-policy h4 {
+  color: var(--color211);
+  font-size: 28px;
+}
+
+@media screen and (max-width: 992px) {
+  .privacy-policy-content .main-content-policy h4 {
+    font-size: 22px;
+  }
+}
+
+.privacy-policy-content .main-content-policy p {
+  text-align: justify !important;
+}
+
+.privacy-policy-content .main-content-policy ul li {
+  list-style-position: initial;
+  text-align: justify !important;
+}
+
+.privacy-policy-content .main-content-policy strong {
+  color: var(--color1) !important;
+}
+
+.privacy-policy-content .main-content-policy a {
+  color: var(--color2);
+}
+
+.privacy-policy-content .main-content-policy h4 {
+  margin-top: 50px;
+}
+
+.privacy-policy-content .main-content-policy h5 {
+  margin-top: 40px;
+}
+
+.privacy-policy-content .main-content-policy p {
+  font-size: 15px;
+}
+/*# sourceMappingURL=privacy-policy.css.map */

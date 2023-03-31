@@ -1,0 +1,18 @@
+Xampp Server
+
+Database name: erp3
+Database file: database/erp3.sql
+
+Database connection file(incase change)
+includes/connection.php
+########################################
+
+Admin Logn Details
+User: admin@admin 
+Pass: 12345
+
+Sales/Cashier
+User: test
+Pass: test
+
+

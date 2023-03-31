@@ -1,0 +1,180 @@
+{
+    "applicationdata":[
+        
+                {
+                    "id":"azure",
+                    "imageUrl":"assets/uploads/integration-logo/azure-logo.png",
+                    "details":"Integration to send/receive transaction data from different message queues of microsoft azure using the namespace.",
+                    "serialNumber":"01.",
+                    "nameofthelogo":"Microsoft Azure Bus Service"
+                },
+                {
+                    "id":"blancco",
+                    "imageUrl":"assets/uploads/integration-logo/blancco-logo.png",
+                    "details":"Retrieval of erased data of any serial number/product from Blancco, a data eraser system. A suitelet designed to have mass selection of serial numbers which will be sent to Blancco system via REST API calls to retrieve erasure details and device information.",
+                    "serialNumber":"02.",
+                    "nameofthelogo":"Blancco"
+                },
+                {
+                    "id":"bigCommerce",
+                    "imageUrl":"assets/uploads/integration-logo/BigCommerce-logo.png",
+                    "details":"This is the non-Netsuite integration we built for one of our customers. We designed an API based web services model between BigCommerce and PayPal.",
+                    "serialNumber":"03.",
+                    "nameofthelogo":"BigCommerce"
+                },
+                {
+                    "id":"clockify",
+                    "imageUrl":"assets/uploads/integration-logo/clockify-logo.png",
+                    "details":"Two-way integration of time entry creation and modifications between Netsuite and Clockify Real time time entry updates from Netsuite to Clockify through record creation and suitelets.",
+                    "serialNumber":"04.",
+                    "nameofthelogo":"Clockify"
+                },
+                {
+                    "id":"doMedia",
+                    "imageUrl":"assets/uploads/integration-logo/domedia-logo.png",
+                    "details":"Integration of various entities like Client, Contact, Contract etc and transactions like Orders, Bills etc from DoMedia system using REST API approach on a scheduled basis.Built to handle very high volumes with error management standards",
+                    "serialNumber":"05.",
+                    "nameofthelogo":"Do Media"
+                },
+                {
+                    "id":"fullContact",
+                    "imageUrl":"assets/uploads/integration-logo/full-contact-logo.png",
+                    "details":"Creating/Updating of customers and Invoice records using netsuite web services with 3Scale API Management in java.",
+                    "serialNumber":"06.",
+                    "nameofthelogo":"Full Contact"
+                },
+                {
+                    "id":"mediaOcean",
+                    "imageUrl":"assets/uploads/integration-logo/mediaOcean-logo.png",
+                    "details":" Mass selection, grouping and file distribution via Suitelets to MediaOcean system. The files are sent through secured file transfer protocol using native Netsuite modules.",
+                    "serialNumber":"07.",
+                    "nameofthelogo":"Media Ocean"
+                },
+                {
+                    "id":"mailchimp",
+                    "imageUrl":"assets/uploads/integration-logo/mailchimp-logo.png",
+                    "details":"Integration to push mailchimp leads to a netsuite server using Rest API’s.",
+                    "serialNumber":"08.",
+                    "nameofthelogo":"MailChimp"
+                },
+                {
+                    "id":"redWood",
+                    "imageUrl":"assets/uploads/integration-logo/redwood-logo.png",
+                    "details":" Integrated a stack of record types from Netsuite to this third party logistics company. This includes two way sync of customers, items and transactions through REST APIs.",
+                    "serialNumber":"09.",
+                    "nameofthelogo":"RedWood"
+                },
+                {
+                    "id":"reece",
+                    "imageUrl":"assets/uploads/integration-logo/reece-logo.png",
+                    "details":"Daily Integration of Tax Invoices and Credit Notes from Reece to Netsuite.",
+                    "serialNumber":"10.",
+                    "nameofthelogo":"Reece"
+                },
+                {
+                    "id":"salesforce",
+                    "imageUrl":"assets/uploads/integration-logo/salesForce-logo.png",
+                    "details":"CRM related records integrated from SalesForce to Netsuite via a middleware server through legacy JAVA based web services. Window scheduler based daily sync process is implemented.",
+                    "serialNumber":"11.",
+                    "nameofthelogo":"SalesForce"
+                },
+                {
+                    "id":"sqlServer",
+                    "imageUrl":"assets/uploads/integration-logo/sql-server-logo.png",
+                    "details":"Integrated multiple records into Netsuite from SQL server from various databases and tables in a daily scheduled syncing mechanism through legacy JAVA based web services in a client centric windows server.",
+                    "serialNumber":"12.",
+                    "nameofthelogo":"SQL Server"
+                },
+                {
+                    "id":"shopify",
+                    "imageUrl":"assets/uploads/integration-logo/Shopify-Logo.png",
+                    "details":"Dynamic, fully automated, real-time integration between NetSuite and the Shopify web store. Intuitive setup and field mappings make this integration easy to use and scalable.",
+                    "serialNumber":"13.",
+                    "nameofthelogo":"Shopify"
+                },
+                {
+                    "id":"sapBusinessOne",
+                    "imageUrl":"assets/uploads/integration-logo/sap-business-logo.png",
+                    "details":"Array of records integrated from SAP to Netsuite via a middleware server through legacy JAVA based web services. Window scheduler based daily sync process is implemented.",
+                    "serialNumber":"14.",
+                    "nameofthelogo":"SAP Business One"
+                },
+                {
+                    "id":"twillo",
+                    "imageUrl":"assets/uploads/integration-logo/twilio-logo.png",
+                    "details":"Real time campaign email execution from Netsuite record creation using SendGrid APIs. Email integration status tracking and reporting based on the daily/weekly sync.",
+                    "serialNumber":"15.",
+                    "nameofthelogo":"Twillo"
+                },
+                {
+                    "id":"wrike",
+                    "imageUrl":"assets/uploads/integration-logo/wrike-logo.png",
+                    "details":"Daily sync of time entries from Wrike to Netsuite through REST APIs. Built to handle high volumes with dedicated error handling.",
+                    "serialNumber":"16.",
+                    "nameofthelogo":"Wrike"
+                }
+
+    ]   ,
+     "integrationMethodData":[
+        {
+            "id":"dellBoomi",
+            "imageUrl":"assets/uploads/integration-logo/dell-boomi-logo.png",
+            "details":"Integrating Netsuite and other external applications in DellBoomi Integration Platform, automated multiple Netsuite integrations with different applications and external APIs.",
+            "serialNumber":"01.",
+            "nameofthelogo":"Dell Boomi"
+        },
+        {
+            "id":"celigo",
+            "imageUrl":"assets/uploads/integration-logo/celigo-logo.png",
+            "details":"Utilized Celigo's Integration platform in bulding various integrations between Netsuite and other applications. Developed automated integrations on Celigio's Integrator.io platform with Netsuite and executed on-demand logical code blocks within the steps of automation.",
+            "serialNumber":"02.",
+            "nameofthelogo":"Celigo"
+        }
+    ],
+    "threePlintegrationData":[
+        {
+            "id":"pacejet",
+            "imageUrl":"assets/uploads/integration-logo/pacejet-logo.png",
+            "details":"Implementation of 3PL automation between Netsuite and PaceJet using APIs that seamlessly connects shipping data and track updates.",
+            "serialNumber":"01.",
+            "nameofthelogo":"Pacejet"
+        },
+        {
+            "id":"bluegrace",
+            "imageUrl":"assets/uploads/integration-logo/bluegrace-logo.png",
+            "details":"Integration of shipping information from BlueGrace to Netsuite through REST methods.",
+            "serialNumber":"02.",
+            "nameofthelogo":"Blue Grace"
+        }
+    ],
+    "paymentData":[
+        {
+            "id":"ccAvenue",
+            "imageUrl":"assets/uploads/integration-logo/ccavenue-logo.png",
+            "details":"Integration with CCAvenue payment gateway by embedding a Credit Card form into a webpage and processing the payment.",
+            "serialNumber":"01.",
+            "nameofthelogo":"CC Avenue"
+        },
+        {
+            "id":"eWay",
+            "imageUrl":"assets/uploads/integration-logo/eway-logo.png",
+            "details":"Eway is an australian payment gateway which is integrated with netsuite webstore using the SuiteApp “Eway Rapid” to accept and process the payments.",
+            "serialNumber":"02.",
+            "nameofthelogo":"E Way"
+        },
+        {
+            "id":"payPal",
+            "imageUrl":"assets/uploads/integration-logo/paypal-logo.png",
+            "details":"Integrating PayPal with Netsuite to accept PayPal as a payment method in SuiteCommerce web stores.PayPal Express Checkout can be set up which will act as an additional payment gateway along with Credit Card options",
+            "serialNumber":"03.",
+            "nameofthelogo":"PayPal"
+        },
+        {
+            "id":"stripe",
+            "imageUrl":"assets/uploads/integration-logo/stripe-logo.png",
+            "details":"Stripe to accept payments from credit cards on buying products through the webstore which is not natively supported to netsuite webstore. Redirecting to a third party web page to track the stripe payment status and displaying order confirmation page once successful.",
+            "serialNumber":"04.",
+            "nameofthelogo":"Stripe"
+        }
+    ]
+}

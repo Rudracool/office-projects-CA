@@ -1,0 +1,94 @@
+.custom-Modal-application-Data {
+  position: relative;
+}
+
+.custom-Modal-application-Data .button-modal {
+  position: absolute;
+  right: 25px;
+  top: 21px;
+}
+
+.custom-Modal-application-Data .button-modal i {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: var(--color205);
+  font-size: 25px;
+}
+
+.custom-Modal-application-Data .button-modal .custom-a-close-modal:hover i {
+  color: var(--color1);
+}
+
+.custom-Modal-application-Data .custom-header {
+  padding: 2%;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 400px) {
+  .custom-Modal-application-Data .custom-header {
+    margin-top: 30px !important;
+  }
+}
+
+.custom-Modal-application-Data .custom-header .h1-cntent-heading h1 {
+  font-size: 30px;
+  color: var(--color1);
+}
+
+.custom-Modal-application-Data .form-group {
+  margin-bottom: 7px;
+  text-align: left;
+}
+
+.custom-Modal-application-Data .form-group label {
+  font-size: 18px;
+  color: var(--color94);
+}
+
+.custom-Modal-application-Data .form-group .col-2, .custom-Modal-application-Data .form-group .col-10 {
+  padding-left: 0;
+}
+
+.custom-Modal-application-Data .modal-form-content {
+  padding: 3%;
+}
+
+.custom-Modal-application-Data .button-padding {
+  margin-top: 22px;
+  padding: 0 !important;
+}
+
+.custom-Modal-application-Data .button-padding span {
+  font-size: 18px !important;
+}
+
+.custom-Modal-application-Data input[type="text"], .custom-Modal-application-Data input[type="email"], .custom-Modal-application-Data input[type="tel"], .custom-Modal-application-Data input[type="date"] {
+  font-size: 15px;
+  padding-bottom: 0;
+  padding-top: 0;
+  height: 35px;
+}
+
+.custom-Modal-application-Data .ErrorMsg {
+  color: var(--color206);
+  font-size: 17px;
+}
+
+.custom-Modal-application-Data .uploadErrorMessage {
+  text-align: left;
+}
+
+.custom-Modal-application-Data .anchor-tag-for-login .custom-career-slider-button {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.custom-Modal-application-Data .anchor-tag-for-login .custom-career-slider-button:hover {
+  background: transparent !important;
+}
+
+.custom-Modal-application-Data .button-padding .btn-maincolor:hover {
+  color: var(--color1) !important;
+}
+/*# sourceMappingURL=modalform.css.map */

@@ -1,0 +1,113 @@
+
+
+
+@media (max-width: 768px) {
+.tp-leftarrow{transform: matrix(0, -1, 1, 0, -40, 88) !important;}
+.tp-rightarrow{transform: matrix(0, -1, 1, 0, -40, -112) !important;}
+
+}
+        .arrow-2.tparrows {
+           
+           
+    cursor:pointer;
+    background: transparent;
+    width:25px;
+    height:25px;
+    position:absolute;
+    display:block;
+    z-index:100;
+    opacity: 1;
+    transition: all .3s linear;
+}
+
+@media screen and (max-width:992px) {
+    .custom-layer-Desktop-view{
+       display: none !important;
+    }
+}
+@media screen and (min-width:992px) {
+    .custom-layer-Mobile-view{
+        display: none !important;
+    }
+}
+
+@media (min-width:768px) and (max-width:900px) {
+    .arrow-2.tparrows {
+        left: 109.5% !important;
+    }         
+}
+.arrow-2.tparrows:hover{
+    opacity: .6;
+}
+.arrow-2.tparrows:before {
+    display:inline-block;
+    height: 18px;
+    width: 25px;
+}
+.arrow-2.tparrows.tp-leftarrow{
+    display: flex;
+      align-items: center;
+    transform: rotate(-90deg);
+}
+
+.arrow-2.tparrows.tp-rightarrow{
+    display: flex;
+      align-items: center;
+    transform: rotate(270deg);
+}
+
+.arrow-2.tparrows.tp-leftarrow:after {
+    content: "PREV";
+    display: inline-block;
+    font-family: Visuelt;
+    letter-spacing: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color14);
+        transition: all .3s linear;
+}
+.arrow-2.tparrows.tp-leftarrow:before{
+    content: '';
+    /* -webkit-mask: url('assets/uploads/2019/05/arrow_left_3.png') no-repeat; */
+    -webkit-mask: url('../../uploads/2019/05/arrow_left_3.png') no-repeat;
+    background-color: var(--color14);
+    display: inline-block;
+    width: 40px;
+    height: 14px;
+    flex-shrink: 0;
+    margin-right: 20px;
+  transition: all .3s linear;
+}
+.arrow-2.tparrows.tp-rightarrow:before {
+    content: "NEXT";
+    display: inline-block;
+    font-family: Visuelt;
+    letter-spacing: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color14);
+        width: auto;
+            margin-right: 10px;
+    height: auto;
+        transition: all .3s linear;
+}
+
+.arrow-2.tparrows.tp-rightarrow:after{
+    content: '';
+    -webkit-mask: url('../../uploads/2019/05/arrow_right_3.png') no-repeat;
+    background-color: var(--color14);
+    display: inline-block;
+    width: 40px;
+    height: 14px;
+    flex-shrink: 0;
+        transition: all .3s linear;
+}
+
+.arrow-2.tparrows.tp-leftarrow:hover:before,
+.arrow-2.tparrows.tp-rightarrow:hover:after{
+    background-color: var(--color1);
+}
+.arrow-2.tparrows.tp-leftarrow:hover:after,
+.arrow-2.tparrows.tp-rightarrow:hover:before{
+    color: var(--color1);
+}

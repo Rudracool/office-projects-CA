@@ -1,0 +1,28 @@
+{
+    "OwlSliderData":[
+        {
+            "id":"01",
+            "verticallineimage":"assets/uploads/2019/06/line01.png",
+            "image":"assets/uploads/2019/06/slide01-3.jpg",
+            "heading-1":"Connect with CloudAlp",
+            "heading-2":"Unlimited Business Growth by optimizing NetSuite",
+            "extraText":""
+        },
+        {
+            "id":"02",
+            "verticallineimage":"assets/uploads/2019/06/line01.png",
+            "image":"assets/uploads/2019/06/slide03-2.jpg",
+            "heading-1":"Connect with CloudAlp",
+            "heading-2":"Unlimited Business Growth by optimizing NetSuite",
+            "extraText":""
+        },
+        {
+            "id":"03",
+            "verticallineimage":"assets/uploads/2019/06/line01.png",
+            "image":"assets/uploads/2019/06/slide02-1.jpg",
+            "heading-1":"Connect with CloudAlp",
+            "heading-2":"Unlimited Business Growth by optimizing NetSuite",
+            "extraText":""
+        }
+    ]
+}

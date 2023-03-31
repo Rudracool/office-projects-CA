@@ -1,0 +1,53 @@
+{
+    "suiteBundlesDetails":[
+        {
+            "id":"billManagement",
+            "image":"https://elevate2.com/app/uploads/2021/05/thomas-lefebvre-gp8BLyaTaA0-unsplash-1024x683.jpg",
+            "heading":"Advanced Bill Management",
+            "alt":"billing section",
+            "url":"#",
+            "details":"Speed up your vendor invoice processing times with SquareWorks’ OCR Technology to automatically capture invoice details into NetSuite."
+        },
+        {
+            "id":"workFlowAutomation",
+            "image":"https://elevate2.com/app/uploads/2021/05/Data-Center-Racks_0-1024x532.png",
+            "heading":"Approval Workflow Automation",
+            "alt":"automation section",
+            "url":"#",
+            "details":"Easily configure all your approval requirements and let your Employees – regardless of their NetSuite access – approve transactions right from their Email Inbox. "
+        },
+        {
+            "id":"AdvancedAttachment",
+            "image":"https://elevate2.com/app/uploads/2021/05/thomas-lefebvre-gp8BLyaTaA0-unsplash-1024x683.jpg",
+            "heading":"Advanced Attachments",
+            "alt":"attachment section",
+            "url":"#",
+            "details":"Drag and drop any files into NetSuite: Vendor Invoices, Contracts, Expense Receipts or any other files you need. Simplify how your files are managed in NetSuite."
+        },
+        {
+            "id":"CheckPrinting",
+            "image":"https://elevate2.com/app/uploads/2021/05/Data-Center-Racks_0-1024x532.png",
+            "heading":"Check Printing",
+            "alt":"printing section",
+            "url":"#",
+            "details":"Say goodbye to your pre-printed check stock, lower your check printing costs and enhance your controls by enabling a better way to print checks in NetSuite."
+        },
+        {
+            "id":"WayMatch",
+            "image":"https://elevate2.com/app/uploads/2021/05/thomas-lefebvre-gp8BLyaTaA0-unsplash-1024x683.jpg",
+            "heading":"3 - Way Match",
+            "alt":"way match section",
+            "url":"#",
+            "details":"As NetSuite users receive goods or process invoices from vendors, validations will be run in real-time to identify any variance violations with a 3-Way Match verification."
+        },
+        {
+            
+            "id":"VendorRequest",
+            "image":"https://elevate2.com/app/uploads/2021/05/Data-Center-Racks_0-1024x532.png",
+            "heading":"Vendor Request",
+            "alt":"vendor section",
+            "url":"#",
+            "details":"Enable all your NetSuite Users – including those with Employee Center Access – to request new Vendors by using a simple, yet fully configurable Vendor Request form."
+        }
+    ]
+}

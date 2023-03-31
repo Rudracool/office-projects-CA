@@ -1,0 +1,45 @@
+{
+    "responsivenessMobileView":"992",
+    "revsliderData":[   
+        {
+            "id1":"01",
+            "dataThumb":"assets/uploads/2019/06/slide01-3-100x1000.jpg",
+            "img1slider1":"assets/uploads/2019/06/baneer-home-6.avif",
+            "layer3img":"assets/uploads/2019/06/line01.png",
+            "layer4img":"assets/img/netsuite-partner.avif",
+            "layer7btnData":"Start Now",
+            "layer8btnData":"Learn More",
+            "id2":"02",
+            "dataThumb2":"assets/uploads/2019/06/slide03-2-100x1000.jpg",
+            "img2slide2":"assets/uploads/2019/06/baneer-home-7.avif",
+            "layer13img":"assets/uploads/2019/06/line01.png",
+            "layer17btndata":"Start Now",
+            "layer18btndata":"Learn More",
+            "id3":"03",
+            "dataThumb3":"assets/uploads/2019/06/slide02-1-100x1000.jpg", 
+            "img3slide3":"assets/uploads/2019/06/rescue-sec-img-6.avif",
+            "layer23img":"assets/uploads/2019/06/line01.png",
+            "layer27btnData":"Start Now",
+            "layer28btnData":"Learn More",
+            "desktopview":{
+                "layer4Data1":"Connect with CloudAlp",
+                "layer5Data1":"Unlimited Business Growth by optimizing NetSuite",
+                "layer14Data1":"One Shop for all NetSuite Needs",
+                "layer15Data1":"Launch  and Scale your Dream Stores with Certified Consultants",
+                "layer24Data1":"CloudAlp at your rescue",
+                "layer25Data1":"Imminent or On going, We support all the way you succeed"
+            },
+            "mobileview":{
+                "layer4Data2":"Connect with",
+                "layer5Data2":"CloudAlp",
+                "layer6Data2":"Unlimited Business Growth by optimizing NetSuite",
+                "layer14Data2":"One Shop for",
+                "layer15Data2":"all NetSuite Needs",
+                "layer16Data2":"Launch  and Scale your Dream Stores with Certified Consultants",
+                "layer24Data2":"CloudAlp at",
+                "layer25Data2":"your rescue",
+                "layer26Data2":"Imminent or On going, We support all the way you succeed"
+            }
+        }
+    ]
+}

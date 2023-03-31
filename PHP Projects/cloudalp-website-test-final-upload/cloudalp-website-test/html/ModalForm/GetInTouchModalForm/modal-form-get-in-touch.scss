@@ -1,0 +1,110 @@
+.custom-Modal-application-Data{
+    position: relative;
+    .button-modal{
+        position: absolute;
+        right: 25px;
+        top: 21px;
+        i{  
+            transition: all 0.3s ease-in-out;
+            color: var(--color205);
+            font-size: 25px;
+        }
+        .custom-a-close-modal{
+            &:hover{
+                i{
+
+                    color: var(--color1);
+                }
+            }
+        }
+    }
+    .custom-header{
+        @media screen and (max-width:400px) {
+            margin-top: 30px !important;
+        }
+        // padding: 2%;
+        width: 100%;
+        height: auto;
+        .h1-cntent-heading{
+            h1{
+                // font-size: 50px;
+                // font-size: 30px;
+                font-size: 37px;
+                color: var(--color1);
+            }
+        }
+    }
+    .form-group{
+        text-align: left;
+        label{
+            // font-size: 23px;
+            // font-size: 20px;
+            font-size: 18px;
+            color: var(--color94);
+        }
+    }
+    .modal-form-content{
+        padding: 3%;
+    }
+    .button-padding{
+        margin-top: 22px;
+        padding: 0 !important;
+        span{
+            font-size: 18px !important;
+        }
+    }
+    input[type="text"],input[type="email"],input[type="tel"],input[type="date"],textarea{
+        font-size: 15px;
+        padding-bottom: 0;
+        padding-top: 0;
+        height: 35px;
+
+    }
+    textarea{
+        background-size: 100% 0;
+        line-height: 31px;
+        min-height: 25px;
+    }
+    input[type="text"],input[type="email"],input[type="tel"],input[type="date"]{
+        line-height: 16px;
+    }
+
+    .ErrorMsg{
+        color: var(--color206);
+        font-size: 17px;
+    }
+    .uploadErrorMessage{
+        text-align: left;
+    }
+    .anchor-tag-for-login{
+        .custom-career-slider-button{
+
+            border: none !important;
+            padding: 0 !important;
+            &:hover{
+                background: var(--color17) !important;
+            }
+        }
+    }
+    .button-padding{
+
+        .btn-maincolor {
+            &:hover{
+                color: var(--color1) !important;
+            }
+        }
+    }
+    .custom-button-form{
+        button{
+            margin-top: 0 !important;
+        }
+    }
+    .modal-body{
+        padding-top: 0 !important;
+    }
+
+}
+
+
+
+

@@ -1,0 +1,60 @@
+{
+    "profileData":[
+        {
+            "id":"director1",
+            "name":"Abdul Khader",
+            "post":"Director",
+            "description":"Description",
+            "image":"./assets/about-us/img/abdul-khader.png",
+            "details":"A dynamic leader and brilliant visionary, Abdul is the Managing Director and NetSuite Practice Director at CloudAlp Technologies. With extensive experience of 13 years in NetSuite services and solution consulting, he seamlessly directs the company’s growth plan. He has a sound knowledge of today’s business trends because of his background across diverse verticals like CRM, accounting, salesforce management, strategic consulting, and so on. The perfect blend of experience and diverse skills have further evolved him as a project management expert who has accurate answers for every business need.",
+            "linkedInLink":"https://www.linkedin.com/in/abdulkhader01/",
+            "delay":"",
+            "alt":"abdul khader image"
+        },
+        {
+            "id":"director2",
+            "name":"Sravan Tumu",
+            "post":"Director",
+            "description":"Description",
+            "image":"./assets/about-us/img/sravan-tumu.png",
+            "details":"Sravan is the Head of Technology and leads the strategy, planning and execution of the technology roadmap of CloudAlp Technologies. As a co-founder he drives innovative and strategic thinking for the company. He bears impressive leadership qualities and is a thorough professional that can turn any project into a successful venture. He understands the industry well and leverages a massive 12 years of experience in NetSuite. With an impeccable command over NetSuite solution architecture and design, he ensures all the services are delivered with highest quality and customer satisfaction.",
+             "details2":" Sravan is the perfect example of someone who is tech-savvy yet a people's man. A thorough professional, he bears impressive leadership qualities that can turn any project into a successful venture. He understands the industry well and leverages a massive 12 years of experience in NetSuite to serve as head of the CloudAlp Technologies technological wing. With an impeccable command over NetSuite solution architecture and design, he has devised various technical training programs and complex web services. ",
+            "linkedInLink":"https://www.linkedin.com/in/suryasra1/",
+            "delay":"0.2s",
+            "alt":"sravan tumu imaage"
+        },
+        {
+            "id":"director3",
+            "name":"Suman Ravipati",
+            "post":"Director",
+            "description":"Description",
+            "image":"./assets/about-us/img/suman-ravipati.png",
+            "details":"A proficient communicator and travel enthusiast, Suman is the founding partner of CloudAlp Technologies. Currently heading the sales department, he brings with himself 16 years of substantial experience in handling B2B sales, networking, recruiting & budgeting of teams, and negotiating & closing deals. As a Netsuite expert, Suman is instrumental in helping his company conceive and accomplish strategic goals. He has also carved a niche in NetSuite, SalesForce.com, SAP consulting and cloud based solutions. Closely work with partners and customers and understand their day to day goals and help them to achieve smoothly.",
+            "linkedInLink":"https://www.linkedin.com/in/netsuiteconsulting/",
+            "delay":"0.4s",
+            "alt":"suman ravipati image"
+        },
+        {
+            "id":"ceo",
+            "name":"Mohammed Tajamul",
+            "post":"COO",
+            "description":"Description",
+            "image":"./assets/about-us/img/mohammed-tajamul.png",
+            "details":"As the COO of CloudAlp Technologies, Tajamul brings forth an exhaustive IT experience of 15 years from across the globe. Over the years, he has proved his competence and expertise by working for Fortune 500 companies in diverse verticals like banking and supply chain. A passionate technophile, Tajamul possesses a robust understanding of networks and systems security. At CloudAlp Technologies, he is committed to formulate and execute coherent strategies. An adept communicator, he builds and maintains trusted relationships with clients,partners, customers and stakeholders alongside overseeing recruitment, onboarding, and training processes.",
+            "linkedInLink":"https://www.linkedin.com/in/mohammed-tajamul-4392a426/",
+            "delay":"0.6s",
+            "alt":"mohammed tajamul image"
+        },
+        {
+            "id":"md",
+            "name":"K.Durga Rao",
+            "post":"Technical Manager", 
+            "description":"Description",
+            "image":"./assets/about-us/img/durga-rao.png",
+            "details":"Durga is the perfect example of someone who is tech-savvy yet a people's man. Durga is the first employee of CloudAlp Technologies and worked closely with all the directors towards the company growth. Having 8+ years of experience alone in NetSuite technical made him goto guy for any technical help, be it a scripting or suitecommerce customizations. Durga holds a master degree in computer applications and is well versed with latest technologies in the market. He loves to spend his leisure time with family and friends and is passionate about traveling.",
+            "linkedInLink":"https://www.linkedin.com/in/durga-rao-15171a72/",
+            "delay":"0.8s",
+            "alt":"durga rao image"
+        }
+    ]
+}
