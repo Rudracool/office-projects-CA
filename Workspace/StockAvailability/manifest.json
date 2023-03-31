@@ -1,0 +1,70 @@
+{
+    "name": "StockAvailability",
+    "fantasyName": "PLP Stock Availability check",
+    "vendor": "Demo",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
+    },
+    "description": "PLP Stock Availability check",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/StockAvailabilityDemo.Service.ss"
+            ]
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/StockAvailabilityDemo/Sass/_stockavailability-stockavailabilitydemo.scss"
+        },
+        "files": [
+            "Modules/StockAvailabilityDemo/Sass/_stockavailability-stockavailabilitydemo.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/StockAvailabilityDemo/Templates/demo_stockavailability_stockavailabilitydemo.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/StockAvailabilityDemo/JavaScript/Demo.StockAvailability.StockAvailabilityDemo.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/StockAvailabilityDemo/JavaScript/Demo.StockAvailability.StockAvailabilityDemo.js",
+                    "Modules/StockAvailabilityDemo/JavaScript/StockAvailabilityDemo.View.js",
+                    "Modules/StockAvailabilityDemo/JavaScript/Demo.StockAvailability.StockAvailabilityDemo.Model.js",
+                    "Modules/StockAvailabilityDemo/JavaScript/Demo.StockAvailability.StockAvailabilityDemo.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/StockAvailabilityDemo/SuiteScript/Demo.StockAvailability.StockAvailabilityDemo.js",
+        "files": [
+            "Modules/StockAvailabilityDemo/SuiteScript/Demo.StockAvailability.StockAvailabilityDemo.js",
+            "Modules/StockAvailabilityDemo/SuiteScript/StockAvailabilityDemo.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\StockAvailability",
+    "suitescript2": {
+        "files": []
+    }
+}

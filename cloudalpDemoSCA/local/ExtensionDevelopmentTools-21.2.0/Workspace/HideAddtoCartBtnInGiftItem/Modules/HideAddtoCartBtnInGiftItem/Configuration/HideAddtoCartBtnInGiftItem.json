@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "HideAddtoCartBtnInGiftItem.config": {
+            "group": "extensions",
+            "subtab": "HideAddtoCartBtnInGiftItem_subtab",
+            "type": "string",
+            "title": "HideAddtoCartBtnInGiftItem_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

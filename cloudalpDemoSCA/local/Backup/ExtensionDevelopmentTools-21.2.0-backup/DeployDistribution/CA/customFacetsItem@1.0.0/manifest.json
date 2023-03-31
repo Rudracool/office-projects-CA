@@ -1,0 +1,105 @@
+{
+    "name": "customFacetsItem",
+    "fantasyName": "customer facets item",
+    "vendor": "CA",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "version": "1.0.0",
+    "description": "customer facets item",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/customFacetsItem.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/customFacetsItem/Configuration/customFacetsItem.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/customFacetsItem/Templates/ca_customfacetsitem_customfacetsitem.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/customFacetsItem/Templates/ca_customfacetsitem_customfacetsitem.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/customFacetsItem/Templates/ca_customfacetsitem_customfacetsitem.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/customFacetsItem/Sass/_customfacetsitem-customfacetsitem.scss",
+            "myaccount": "Modules/customFacetsItem/Sass/_customfacetsitem-customfacetsitem.scss",
+            "checkout": "Modules/customFacetsItem/Sass/_customfacetsitem-customfacetsitem.scss"
+        },
+        "files": [
+            "Modules/customFacetsItem/Sass/_customfacetsitem-customfacetsitem.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/customFacetsItem/JavaScript/CA.customFacetsItem.customFacetsItem.js",
+            "myaccount": "Modules/customFacetsItem/JavaScript/CA.customFacetsItem.customFacetsItem.js",
+            "checkout": "Modules/customFacetsItem/JavaScript/CA.customFacetsItem.customFacetsItem.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/customFacetsItem/JavaScript/CA.customFacetsItem.customFacetsItem.js",
+                    "Modules/customFacetsItem/JavaScript/customFacetsItem.View.js",
+                    "Modules/customFacetsItem/JavaScript/CA.customFacetsItem.customFacetsItem.Model.js",
+                    "Modules/customFacetsItem/JavaScript/CA.customFacetsItem.customFacetsItem.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/customFacetsItem/JavaScript/CA.customFacetsItem.customFacetsItem.js",
+                    "Modules/customFacetsItem/JavaScript/customFacetsItem.View.js",
+                    "Modules/customFacetsItem/JavaScript/CA.customFacetsItem.customFacetsItem.Model.js",
+                    "Modules/customFacetsItem/JavaScript/CA.customFacetsItem.customFacetsItem.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/customFacetsItem/JavaScript/CA.customFacetsItem.customFacetsItem.js",
+                    "Modules/customFacetsItem/JavaScript/customFacetsItem.View.js",
+                    "Modules/customFacetsItem/JavaScript/CA.customFacetsItem.customFacetsItem.Model.js",
+                    "Modules/customFacetsItem/JavaScript/CA.customFacetsItem.customFacetsItem.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/customFacetsItem/SuiteScript/CA.customFacetsItem.customFacetsItem.js",
+        "files": [
+            "Modules/customFacetsItem/SuiteScript/CA.customFacetsItem.customFacetsItem.js",
+            "Modules/customFacetsItem/SuiteScript/customFacetsItem.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/customFacetsItem/SuiteScript2/customFacetsItem.Service.ss"
+        ]
+    }
+}

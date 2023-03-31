@@ -1,0 +1,86 @@
+/*
+group({
+ "id": "home-heading-text",
+ "label": "Home - Heading Text",
+ "description": "",
+ "children": [
+    "$sc-blog-home-title-font-family",
+    "$sc-blog-home-title-mobile-font-size",
+    "$sc-blog-home-title-desktop-font-size",
+    "$sc-blog-home-title-line-height",
+    "$sc-blog-home-title-font-color"
+ ]
+})
+*/
+$sc-blog-home-title-font-family: $sc-blog-regular-font-family; // editable({"type": "string", "label": "Font Family"})
+$sc-blog-home-title-mobile-font-size: $sc-blog-h1-font-size; // editable({"type": "string", "label": "Mobile Size"})
+$sc-blog-home-title-desktop-font-size: $sc-blog-h1-font-size; // editable({"type": "string", "label": "Desktop Size"})
+$sc-blog-home-title-line-height: $sc-blog-h1-line-height; // editable({"type": "string", "label": "Line Height"})
+$sc-blog-home-title-font-color: $sc-color-copy-dark; // editable({"type": "color", "label": "Text Color"})
+
+/*
+group({
+ "id": "home-section-heading-text",
+ "label": "Home - Section Heading Texts",
+ "description": "",
+ "children": [
+    "$sc-blog-home-section-heading-font-family",
+    "$sc-blog-home-section-heading-mobile-font-size",
+    "$sc-blog-home-section-heading-desktop-font-size",
+    "$sc-blog-home-section-heading-line-height",
+    "$sc-blog-home-section-heading-font-color"
+ ]
+})
+*/
+$sc-blog-home-section-heading-font-family: $sc-blog-regular-font-family; // editable({"type": "string", "label": "Font Family"})
+$sc-blog-home-section-heading-mobile-font-size: $sc-blog-h5-font-size; // editable({"type": "string", "label": "Mobile Size"})
+$sc-blog-home-section-heading-desktop-font-size: $sc-blog-h5-font-size; // editable({"type": "string", "label": "Desktop Size"})
+$sc-blog-home-section-heading-line-height: $sc-blog-regular-line-height; // editable({"type": "string", "label": "Line Height"})
+$sc-blog-home-section-heading-font-color: $sc-color-copy-dark; // editable({"type": "color", "label": "Text Color"})
+
+/*
+group({
+ "id": "home-featured-post-section",
+ "label": "Home - Featured Posts Section",
+ "description": "",
+ "children": [
+    "$sc-blog-home-featured-posts-background-color",
+    "$sc-blog-post-card-vertical-background",
+    "$sc-blog-post-card-vertical-border-color",
+    "$sc-blog-post-card-vertical-border-width",
+    "$sc-blog-post-card-vertical-border-radius",
+    "$sc-blog-post-card-vertical-shadow-color",
+    "$sc-blog-post-card-vertical-title-font-family",
+    "$sc-blog-post-card-vertical-title-text-color",
+    "$sc-blog-post-card-vertical-excerpt-font-family",
+    "$sc-blog-post-card-vertical-excerpt-text-color",
+    "$sc-blog-post-card-vertical-link-font-family",
+    "$sc-blog-post-card-vertical-link-text-color"
+ ]
+})
+*/
+$sc-blog-home-featured-posts-background-color: #FFFFFF; // editable({"type": "color", "label": "Section Background"});
+
+/*
+group({
+ "id": "home-post-section",
+ "label": "Home - Posts Section",
+ "description": "",
+ "children": [
+    "$sc-blog-home-background-color",
+    "$sc-blog-post-card-horizontal-background",
+    "$sc-blog-post-card-horizontal-border-color",
+    "$sc-blog-post-card-horizontal-border-width",
+    "$sc-blog-post-card-horizontal-border-radius",
+    "$sc-blog-post-card-horizontal-shadow-color",
+    "$sc-blog-post-card-horizontal-text-highlight-color",
+    "$sc-blog-post-card-horizontal-title-font-family",
+    "$sc-blog-post-card-horizontal-title-text-color",
+    "$sc-blog-post-card-horizontal-excerpt-font-family",
+    "$sc-blog-post-card-horizontal-excerpt-text-color",
+    "$sc-blog-post-card-horizontal-link-font-family",
+    "$sc-blog-post-card-horizontal-link-text-color"
+ ]
+})
+*/
+$sc-blog-home-background-color: #FFFFFF; // editable({"type": "color", "label": "Blog Background"});

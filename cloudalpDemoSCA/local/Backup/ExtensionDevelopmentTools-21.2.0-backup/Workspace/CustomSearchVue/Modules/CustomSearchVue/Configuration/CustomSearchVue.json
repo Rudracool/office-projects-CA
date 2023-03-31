@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "CustomSearchVue.config": {
+            "group": "extensions",
+            "subtab": "CustomSearchVue_subtab",
+            "type": "string",
+            "title": "CustomSearchVue_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+define('product_reviews_review.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "\r\n<div class=\"product-reviews-review\" data-id=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"reviewId") || (depth0 != null ? compilerNameLookup(depth0,"reviewId") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"reviewId","hash":{},"data":data,"loc":{"start":{"line":3,"column":45},"end":{"line":3,"column":57}}}) : helper)))
+    + "\">\r\n	<div class=\"product-reviews-review-comment-item-cell\">\r\n		<div data-view=\"ProductReview.Review.Global.StarRating\"></div>\r\n	</div>\r\n	<h4 class=\"product-reviews-review-title\">\r\n		"
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"reviewTitle") || (depth0 != null ? compilerNameLookup(depth0,"reviewTitle") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"reviewTitle","hash":{},"data":data,"loc":{"start":{"line":8,"column":2},"end":{"line":8,"column":17}}}) : helper)))
+    + "\r\n	</h4>\r\n	<div class=\"product-reviews-review-review\">\r\n		<p class=\"product-reviews-review-review-description\">\r\n            "
+    + ((stack1 = (compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,(depth0 != null ? compilerNameLookup(depth0,"reviewText") : depth0),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":25,"column":12},"end":{"line":25,"column":38}}})) != null ? stack1 : "")
+    + "\r\n		</p>\r\n	</div>\r\n</div>\r\n\r\n\r\n\r\n\r\n";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Mothrecare/MotherCareTheme/3.0.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Mothrecare/MotherCareTheme/3.0.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'product_reviews_review'; return template;});

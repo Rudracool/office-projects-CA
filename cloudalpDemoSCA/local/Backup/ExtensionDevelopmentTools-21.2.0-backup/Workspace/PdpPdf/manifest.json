@@ -1,0 +1,77 @@
+{
+    "name": "PdpPdf",
+    "fantasyName": "PDPCustom",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
+    },
+    "description": "adding pdfs to pdp",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/PDPCustompdf.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/PDPCustompdf/Configuration/PDPCustompdf.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/PDPCustompdf/Sass/_pdppdf-pdpcustompdf.scss"
+        },
+        "files": [
+            "Modules/PDPCustompdf/Sass/_pdppdf-pdpcustompdf.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PDPCustompdf/Templates/ca_pdppdf_pdpcustompdf.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/PDPCustompdf/JavaScript/CA.PdpPdf.PDPCustompdf.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PDPCustompdf/JavaScript/CA.PdpPdf.PDPCustompdf.js",
+                    "Modules/PDPCustompdf/JavaScript/PDPCustompdf.View.js",
+                    "Modules/PDPCustompdf/JavaScript/CA.PdpPdf.PDPCustompdf.Model.js",
+                    "Modules/PDPCustompdf/JavaScript/CA.PdpPdf.PDPCustompdf.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/PDPCustompdf/SuiteScript/CA.PdpPdf.PDPCustompdf.js",
+        "files": [
+            "Modules/PDPCustompdf/SuiteScript/CA.PdpPdf.PDPCustompdf.js",
+            "Modules/PDPCustompdf/SuiteScript/PDPCustompdf.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\PdpPdf",
+    "suitescript2": {
+        "files": [
+            "Modules/PDPCustompdf/SuiteScript2/PDPCustompdf.Service.ss"
+        ]
+    }
+}

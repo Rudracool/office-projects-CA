@@ -1,0 +1,16 @@
+{
+  "generator-extension": {
+    "ext_application": {
+      "customFacetsItem": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ],
+      "surchargeCreditcard": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ]
+    }
+  }
+}

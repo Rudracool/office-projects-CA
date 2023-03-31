@@ -1,0 +1,77 @@
+{
+    "name": "stockDetailsInPurchaseHistory",
+    "fantasyName": "sstock details if a item is already purchase with a stock message",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": ">=21.2.0",
+        "SCA": ">=21.2.0"
+    },
+    "description": "sstock details if a item is already purchase and uncheck the checkbox to get the data in order history",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/stockDetailsInPurchaseHistory.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/stockDetailsInPurchaseHistory/Configuration/stockDetailsInPurchaseHistory.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/stockDetailsInPurchaseHistory/Sass/_stockdetailsinpurchasehistory-stockdetailsinpurchasehistory.scss"
+        },
+        "files": [
+            "Modules/stockDetailsInPurchaseHistory/Sass/_stockdetailsinpurchasehistory-stockdetailsinpurchasehistory.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/stockDetailsInPurchaseHistory/Templates/ca_stockdetailsinpurchasehistory_stockdetailsinpurchasehistory.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/stockDetailsInPurchaseHistory/JavaScript/CA.stockDetailsInPurchaseHistory.stockDetailsInPurchaseHistory.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/stockDetailsInPurchaseHistory/JavaScript/CA.stockDetailsInPurchaseHistory.stockDetailsInPurchaseHistory.js",
+                    "Modules/stockDetailsInPurchaseHistory/JavaScript/stockDetailsInPurchaseHistory.View.js",
+                    "Modules/stockDetailsInPurchaseHistory/JavaScript/CA.stockDetailsInPurchaseHistory.stockDetailsInPurchaseHistory.Model.js",
+                    "Modules/stockDetailsInPurchaseHistory/JavaScript/CA.stockDetailsInPurchaseHistory.stockDetailsInPurchaseHistory.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/stockDetailsInPurchaseHistory/SuiteScript/CA.stockDetailsInPurchaseHistory.stockDetailsInPurchaseHistory.js",
+        "files": [
+            "Modules/stockDetailsInPurchaseHistory/SuiteScript/CA.stockDetailsInPurchaseHistory.stockDetailsInPurchaseHistory.js",
+            "Modules/stockDetailsInPurchaseHistory/SuiteScript/stockDetailsInPurchaseHistory.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\stockDetailsInPurchaseHistory",
+    "suitescript2": {
+        "files": [
+            "Modules/stockDetailsInPurchaseHistory/SuiteScript2/stockDetailsInPurchaseHistory.Service.ss"
+        ]
+    }
+}

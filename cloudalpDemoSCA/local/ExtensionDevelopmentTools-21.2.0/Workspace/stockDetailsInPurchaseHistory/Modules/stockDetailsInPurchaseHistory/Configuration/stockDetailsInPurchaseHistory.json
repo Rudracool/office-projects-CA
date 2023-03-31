@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "stockDetailsInPurchaseHistory.config": {
+            "group": "extensions",
+            "subtab": "stockDetailsInPurchaseHistory_subtab",
+            "type": "string",
+            "title": "stockDetailsInPurchaseHistory_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

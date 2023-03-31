@@ -1,0 +1,71 @@
+{
+    "name": "GiftCardEmailSend",
+    "fantasyName": "Send Email For Gift Card",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "description": "Send Email For Gift Card",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/GiftCardEmailSend.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/GiftCardEmailSend/Configuration/GiftCardEmailSend.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/GiftCardEmailSend/Sass/_giftcardemailsend-giftcardemailsend.scss"
+        },
+        "files": [
+            "Modules/GiftCardEmailSend/Sass/_giftcardemailsend-giftcardemailsend.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/GiftCardEmailSend/Templates/ca_giftcardemailsend_giftcardemailsend.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/GiftCardEmailSend/JavaScript/CA.GiftCardEmailSend.GiftCardEmailSend.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/GiftCardEmailSend/JavaScript/CA.GiftCardEmailSend.GiftCardEmailSend.js",
+                    "Modules/GiftCardEmailSend/JavaScript/GiftCardEmailSend.View.js",
+                    "Modules/GiftCardEmailSend/JavaScript/CA.GiftCardEmailSend.GiftCardEmailSend.Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/GiftCardEmailSend/SuiteScript/CA.GiftCardEmailSend.GiftCardEmailSend.js",
+        "files": [
+            "Modules/GiftCardEmailSend/SuiteScript/CA.GiftCardEmailSend.GiftCardEmailSend.js",
+            "Modules/GiftCardEmailSend/SuiteScript/GiftCardEmailSend.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\GiftCardEmailSend"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "AdvancedSignUpModule.config": {
+            "group": "extensions",
+            "subtab": "AdvancedSignUpModule_subtab",
+            "type": "string",
+            "title": "AdvancedSignUpModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

@@ -1,0 +1,80 @@
+{
+	"name": "PDPCustomization",
+	"fantasyName": "PDP Customization to fetch the file in file cabinet",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=22.1.0",
+		"SCS": ">=22.1.0"
+	},
+	"version": "1.0.0",
+	"description": "PDP Customization to fetch the file in file cabinet and display in pdp",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/PDPCustomization.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/PDPCustomization/Configuration/PDPCustomization.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/PDPCustomization/Templates/pdp_custom_sales_unit.tpl",
+					"Modules/PDPCustomization/Templates/pdp_sales_unit.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/PDPCustomization/Sass/_pdpcustomization-pdpcustomization.scss"
+		},
+		"files": [
+			"Modules/PDPCustomization/Sass/_pdpcustomization-pdpcustomization.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/PDPCustomization/JavaScript/CA.PDPCustomization.PDPCustomization.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/PDPCustomization/JavaScript/CA.PDPCustomization.PDPCustomization.js",
+					"Modules/PDPCustomization/JavaScript/CA.PDPCustomization.PDPCustomization.Model.js",
+					"Modules/PDPCustomization/JavaScript/CA.PDPCustomization.PDPCustomization.SS2Model.js",
+					"Modules/PDPCustomization/JavaScript/PDPCustomSalesUnit.View.js",
+					"Modules/PDPCustomization/JavaScript/PDPSalesUnit.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/PDPCustomization/SuiteScript/CA.PDPCustomization.PDPCustomization.js",
+		"files": [
+			"Modules/PDPCustomization/SuiteScript/CA.PDPCustomization.PDPCustomization.js",
+			"Modules/PDPCustomization/SuiteScript/PDPCustomization.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/PDPCustomization/SuiteScript2/PDPCustomization.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CA/PDPCustomization@1.0.0",
+	"activation_id": "2",
+	"extension_id": "401"
+}

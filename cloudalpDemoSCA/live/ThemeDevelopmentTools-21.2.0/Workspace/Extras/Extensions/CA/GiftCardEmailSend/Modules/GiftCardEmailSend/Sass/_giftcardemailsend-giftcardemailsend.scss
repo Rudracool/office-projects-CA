@@ -1,0 +1,63 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.gift-cretification-data{
+	@extend .box-column;
+}
+.main-data-container{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+.saveBtn{
+	@extend .btn;
+	@extend  .btn-primary;
+	margin-right: 10px;
+	padding: 9px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: #15607b;
+	border-color: #15607b;
+}
+.email-btn{
+	@extend .btn;
+	@extend .btn-warning;
+	padding: 9px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: #e23200;
+	border-color: #e23200;
+	&:hover{
+		background: #f54f20;
+		border-color: #e23200;
+	}
+	&:focus{
+		background: #f54f20;
+		border-color: #e23200;
+	}
+	&:active{
+		background: #f54f20 !important;
+		border-color: #e23200 !important;
+	}
+}
+.customdata-main-container{
+	margin-right: 5%;
+}
+.orderWizard-sendmail{
+	// @extend input;
+	@extend .order-wizard-paymentmethod-purchasenumber-module-purchase-order-value;
+	// changes
+}
+.showEmailData{
+	display: block !important;
+}
+.emailTemplateMailData{
+	display: none;
+}

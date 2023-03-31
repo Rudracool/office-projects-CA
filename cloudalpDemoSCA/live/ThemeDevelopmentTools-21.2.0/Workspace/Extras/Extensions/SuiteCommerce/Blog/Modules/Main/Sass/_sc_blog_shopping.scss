@@ -1,0 +1,26 @@
+@import "../../Common/Sass/sc_blog_common";
+@import "../../Post/Sass/sc_blog_post";
+@import "../../BlogHome/Sass/sc_blog_home";
+@import "../../ExtCarousel/Sass/sc_ext_carousel";
+@import "../../LatestPosts/Sass/sc_blog_latest_posts";
+@import "../../PostCard/Sass/sc_blog_post_card";
+@import "../../Pagination/Sass/sc_blog_pagination";
+@import "../../PostSearch/Sass/sc_blog_post_search";
+@import "../../TaxonomyNavigation/Sass/sc_blog_post_taxonomy_navigation";
+@import "../../PostCardsCCT/Sass/sc_blog_post_cards_cct";
+
+/*
+group({
+   "id": "sc-blog",
+   "label": "Blog",
+   "description": "",
+   "children": [
+      "home-heading-text",
+      "home-section-heading-text",
+      "home-latest-posts-section",
+      "home-featured-post-section",
+      "home-post-section",
+      "posts"
+   ]
+})
+*/

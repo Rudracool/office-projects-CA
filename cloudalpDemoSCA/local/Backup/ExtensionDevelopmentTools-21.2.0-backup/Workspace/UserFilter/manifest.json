@@ -1,0 +1,79 @@
+{
+    "name": "UserFilter",
+    "fantasyName": "User Filter Extension",
+    "vendor": "Uf",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
+    },
+    "description": "My cool extension does magic!",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/UserFilterModule/Configuration/UserFilterModule.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/UserFilterModule/Sass/_userfilter-userfiltermodule.scss",
+            "myaccount": "Modules/UserFilterModule/Sass/_userfilter-userfiltermodule.scss"
+        },
+        "files": [
+            "Modules/UserFilterModule/Sass/_userfilter-userfiltermodule.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/UserFilterModule/Templates/uf_userfilter_userfiltermodule.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/UserFilterModule/Templates/uf_userfilter_userfiltermodule.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/UserFilterModule/JavaScript/Uf.UserFilter.UserFilterModule.js",
+            "myaccount": "Modules/UserFilterModule/JavaScript/Uf.UserFilter.UserFilterModule.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/UserFilterModule/JavaScript/Uf.UserFilter.UserFilterModule.js",
+                    "Modules/UserFilterModule/JavaScript/UserFilterModule.View.js",
+                    "Modules/UserFilterModule/JavaScript/Uf.UserFilter.UserFilterModule.Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/UserFilterModule/JavaScript/Uf.UserFilter.UserFilterModule.js",
+                    "Modules/UserFilterModule/JavaScript/UserFilterModule.View.js",
+                    "Modules/UserFilterModule/JavaScript/Uf.UserFilter.UserFilterModule.Model.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\UserFilter",
+    "suitescript2": {
+        "files": []
+    }
+}

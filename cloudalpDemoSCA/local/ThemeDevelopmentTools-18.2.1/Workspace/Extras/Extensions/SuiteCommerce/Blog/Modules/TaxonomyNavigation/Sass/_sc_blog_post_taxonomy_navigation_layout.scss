@@ -1,0 +1,101 @@
+.sc-blog-post-taxonomy-navigation {
+  &-list-title {
+    cursor: pointer;
+    @media (min-width: $screen-md-min) {
+      cursor: default;
+    }
+
+    &-large-devices {
+      display: none;
+      @media (min-width: $screen-md-min) {
+        display: inline-block;
+      }
+    }
+
+    &-small-devices {
+      display: inline-block;
+      @media (min-width: $screen-md-min) {
+        display: none;
+      }
+    }
+
+    &-icon {
+      display: inline-block;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      @extend .chevron_up;
+      -ms-transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      margin-left: $sc-margin-base;
+
+      &.transform {
+        -ms-transform: rotate(0);
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+      }
+
+      @media (min-width: $screen-md-min) {
+        display: none;
+      }
+    }
+  }
+
+  &-container {
+    height: 0;
+    opacity: 0;
+    transition: all 200ms ease;
+
+    @media (min-width: $screen-md-min) {
+      opacity: 1;
+      height: auto;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      &.expanded {
+        opacity: 1;
+        background-color: #ffffff;
+        margin-left: -$sc-margin-lv2;
+        margin-right: -$sc-margin-lv2;
+        width: 120%;
+        padding-left: $sc-padding-lv2;
+        padding-right: $sc-padding-lv2;
+        padding-bottom: $sc-padding-lv2;
+        transition: all 200ms ease;
+        height: auto;
+        li {
+          display: block;
+        }
+      }
+      li {
+        display: none;
+      }
+    }
+
+  }
+
+  &-taxonomy {
+    margin-top: $sc-margin-lv4;
+    font-weight: 300;
+
+    a {
+      text-transform: uppercase;
+      color: $sc-blog-post-taxonomy-navigation-link-color;
+
+      &:hover {
+        font-weight: 600;
+        text-decoration: underline;
+      }
+    }
+
+    &-highlighted {
+      @media (min-width: $screen-md-min) {
+        font-weight: 600;
+        display: inline-block;
+      }
+      display: none;
+    }
+  }
+}
+

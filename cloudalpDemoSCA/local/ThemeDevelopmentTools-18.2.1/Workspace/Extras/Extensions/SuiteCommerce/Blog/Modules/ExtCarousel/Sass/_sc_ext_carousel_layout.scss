@@ -1,0 +1,106 @@
+$transition-duration: .4s;
+$transition-duration-dragging: .2s;
+
+.sc-ext-carousel {
+  position: relative;
+
+  &-slides {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    @extend .clearfix;
+
+    &:not(.drag-area) {
+
+      &.transition-slide {
+        .sc-ext-carousel-slide {
+          display: none;
+          transition-property: opacity, transform;
+          transition-duration: $transition-duration;
+          transition-timing-function: ease-in-out;
+
+          &.active,
+          &.in-right,
+          &.in-left {
+            display: block;
+          }
+
+          &.in-right:not(.right),
+          &.active.right {
+            transform: translateX(100%);
+          }
+
+          &.in-left:not(.left),
+          &.active.left {
+            transform: translateX(-100%);
+          }
+        }
+      }
+
+      &.transition-fade {
+        .sc-ext-carousel-slide {
+          opacity: 0;
+          transition-property: opacity;
+          transition-duration: $transition-duration;
+          transition-timing-function: ease-in-out;
+
+          &.active.left,
+          &.active.right {
+            opacity: 0;
+            transform: translate(0, 0);
+          }
+
+          &.active,
+          &.active.in-right,
+          &.active.in-left {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &.drag-area {
+      touch-action: pan-y;
+
+      .sc-ext-carousel-slide {
+        display: none;
+        transform: none;
+        height: auto;
+        opacity: 1;
+
+        &.drag-start, &.drag-end {
+          display: block;
+          opacity: 1;
+        }
+
+        &.drag-start {
+          transition: transform 0s;
+        }
+
+        &.drag-end {
+          transition: transform $transition-duration-dragging;
+        }
+      }
+    }
+
+    * {
+      user-select: none;
+    }
+  }
+
+  &-slide {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    backface-visibility: hidden;
+    z-index: 1;
+    &.active {
+      z-index: 2;
+    }
+  }
+
+  &-indicators {
+    z-index: 2;
+  }
+}

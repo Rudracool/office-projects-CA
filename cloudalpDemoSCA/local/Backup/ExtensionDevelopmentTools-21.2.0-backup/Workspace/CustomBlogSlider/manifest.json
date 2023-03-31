@@ -1,0 +1,80 @@
+{
+    "name": "CustomBlogSlider",
+    "fantasyName": "CustomBlogsSlider",
+    "vendor": "RFI",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "description": "showing blogs in slider ",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/CustomBlogerSlider.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/CustomBlogerSlider/Configuration/CustomBlogerSlider.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/CustomBlogerSlider/Sass/_customblogslider-customblogerslider.scss"
+        },
+        "files": [
+            "Modules/CustomBlogerSlider/Sass/_customblogslider-customblogerslider.scss",
+            "Modules/CustomBlogerSlider/Sass/slick-theme.scss",
+            "Modules/CustomBlogerSlider/Sass/slick.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/CustomBlogerSlider/Templates/rfi_customblogslider_customblogerslider.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/CustomBlogerSlider/JavaScript/RFI.CustomBlogSlider.CustomBlogerSlider.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/CustomBlogerSlider/JavaScript/RFI.CustomBlogSlider.CustomBlogerSlider.js",
+                    "Modules/CustomBlogerSlider/JavaScript/CustomBlogerSlider.View.js",
+                    "Modules/CustomBlogerSlider/JavaScript/RFI.CustomBlogSlider.CustomBlogerSlider.Model.js",
+                    "Modules/CustomBlogerSlider/JavaScript/RFI.CustomBlogSlider.CustomBlogerSlider.SS2Model.js",
+                    "Modules/jquery.slick/Javascript/jquery.slick.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/CustomBlogerSlider/SuiteScript/RFI.CustomBlogSlider.CustomBlogerSlider.js",
+        "files": [
+            "Modules/CustomBlogerSlider/SuiteScript/RFI.CustomBlogSlider.CustomBlogerSlider.js",
+            "Modules/CustomBlogerSlider/SuiteScript/CustomBlogerSlider.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\CustomBlogSlider",
+    "suitescript2": {
+        "files": [
+            "Modules/CustomBlogerSlider/SuiteScript2/CustomBlogerSlider.Service.ss"
+        ]
+    }
+}

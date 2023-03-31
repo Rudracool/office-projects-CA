@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "OfferModalPopupAfterLogin.config": {
+            "group": "extensions",
+            "subtab": "OfferModalPopupAfterLogin_subtab",
+            "type": "string",
+            "title": "OfferModalPopupAfterLogin_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

@@ -1,0 +1,87 @@
+{
+	"name": "CustomCMSPageLayout",
+	"fantasyName": "Custom CMS Page Layout",
+	"vendor": "CA",
+	"type": "extension",
+	"page": {
+		"types": [
+			{
+				"name": "CustomCMSPageLayout",
+				"displayName": "Non Blog Page",
+				"description": "This extension is used to create new landing page layout for creating landing pages and where default layout will be used by BLOG page."
+			}
+		]
+	},
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "This extension is used to create new landing page layout for creating landing pages and where default layout will be used by BLOG page.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/CustomCMSPageLayout.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/CustomCMSPageLayout/Configuration/CustomCMSPageLayout.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CustomCMSPageLayout/Templates/ca_customcmspagelayout_customcmspagelayout.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/CustomCMSPageLayout/Sass/_customcmspagelayout-customcmspagelayout.scss"
+		},
+		"files": [
+			"Modules/CustomCMSPageLayout/Sass/_customcmspagelayout-customcmspagelayout.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/CustomCMSPageLayout/JavaScript/CA.CustomCMSPageLayout.CustomCMSPageLayout.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CustomCMSPageLayout/JavaScript/CA.CustomCMSPageLayout.CustomCMSPageLayout.js",
+					"Modules/CustomCMSPageLayout/JavaScript/CustomCMSPageLayout.View.js",
+					"Modules/CustomCMSPageLayout/JavaScript/CA.CustomCMSPageLayout.CustomCMSPageLayout.Model.js",
+					"Modules/CustomCMSPageLayout/JavaScript/CA.CustomCMSPageLayout.CustomCMSPageLayout.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/CustomCMSPageLayout/SuiteScript/CA.CustomCMSPageLayout.CustomCMSPageLayout.js",
+		"files": [
+			"Modules/CustomCMSPageLayout/SuiteScript/CA.CustomCMSPageLayout.CustomCMSPageLayout.js",
+			"Modules/CustomCMSPageLayout/SuiteScript/CustomCMSPageLayout.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/CustomCMSPageLayout/SuiteScript2/CustomCMSPageLayout.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CA/CustomCMSPageLayout@1.0.0",
+	"activation_id": "15",
+	"extension_id": "10513"
+}

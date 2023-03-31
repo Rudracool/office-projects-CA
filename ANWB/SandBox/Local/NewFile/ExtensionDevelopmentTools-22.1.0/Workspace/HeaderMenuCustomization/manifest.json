@@ -1,0 +1,86 @@
+{
+	"name": "HeaderMenuCustomization",
+	"fantasyName": "Header Menu Changes",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=22.1.0",
+		"SCS": ">=22.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Header Menu Changes",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HeaderMenuCustomization/Templates/ca_headermenucustomization_headermenucustomization.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/HeaderMenuCustomization/Templates/ca_headermenucustomization_headermenucustomization.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/HeaderMenuCustomization/Templates/ca_headermenucustomization_headermenucustomization.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/HeaderMenuCustomization/Sass/_headermenucustomization-headermenucustomization.scss",
+			"myaccount": "Modules/HeaderMenuCustomization/Sass/_headermenucustomization-headermenucustomization.scss",
+			"checkout": "Modules/HeaderMenuCustomization/Sass/_headermenucustomization-headermenucustomization.scss"
+		},
+		"files": [
+			"Modules/HeaderMenuCustomization/Sass/_headermenucustomization-headermenucustomization.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/HeaderMenuCustomization/JavaScript/CA.HeaderMenuCustomization.HeaderMenuCustomization.js",
+			"myaccount": "Modules/HeaderMenuCustomization/JavaScript/CA.HeaderMenuCustomization.HeaderMenuCustomization.js",
+			"checkout": "Modules/HeaderMenuCustomization/JavaScript/CA.HeaderMenuCustomization.HeaderMenuCustomization.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HeaderMenuCustomization/JavaScript/CA.HeaderMenuCustomization.HeaderMenuCustomization.js",
+					"Modules/HeaderMenuCustomization/JavaScript/HeaderMenuCustomization.View.js",
+					"Modules/HeaderMenuCustomization/JavaScript/CA.HeaderMenuCustomization.HeaderMenuCustomization.Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/HeaderMenuCustomization/JavaScript/CA.HeaderMenuCustomization.HeaderMenuCustomization.js",
+					"Modules/HeaderMenuCustomization/JavaScript/HeaderMenuCustomization.View.js",
+					"Modules/HeaderMenuCustomization/JavaScript/CA.HeaderMenuCustomization.HeaderMenuCustomization.Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/HeaderMenuCustomization/JavaScript/CA.HeaderMenuCustomization.HeaderMenuCustomization.js",
+					"Modules/HeaderMenuCustomization/JavaScript/HeaderMenuCustomization.View.js",
+					"Modules/HeaderMenuCustomization/JavaScript/CA.HeaderMenuCustomization.HeaderMenuCustomization.Model.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CA/HeaderMenuCustomization@1.0.0",
+	"activation_id": 2,
+	"extension_id": "601"
+}

@@ -1,0 +1,40 @@
+define('header.tpl', ['Handlebars','Handlebars.CompilerNameLookup','header_sidebar.tpl','header_sidebar.tpl'], function (Handlebars, compilerNameLookup){ var t = {"1":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression;
+
+  return "<div class=\"header-main-wrapper"
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isChannelUc") : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":5,"column":31},"end":{"line":5,"column":79}}})) != null ? stack1 : "")
+    + "\">\n    <nav class=\"header-main-nav\">\n\n        <div class=\"header-sidebar-toggle-wrapper\">\n            <button class=\"header-sidebar-toggle\" data-action=\"header-sidebar-show\">\n                <i class=\"header-sidebar-toggle-icon\"></i>\n            </button>\n        </div>\n\n        <div class=\"header-content\">\n            <!--div class=\"header-logo-wrapper\">\n                <div data-view=\"Header.Logo\"></div>\n            </div-->\n            <div class=\"header-left-content\">\n					<div class=\"footer-content-social\">\n						<ul class=\"footer-content-social-list\">\n							<li><a href=\"https://www.linkedin.com/company/3859651\" data-hashtag=\"\" data-touchpoint=\"\" data-target=\"\" class=\"footer-content-social-link\" target=\"_blank\"><i class=\"footer-content-social-icon icon-linkedin\"></i></a></li>\n						</ul>\n					</div>\n            </div>\n\n            <div class=\"header-right-menu\">\n                <ul class=\"header-right-menu-options\">\n                    <!--li class=\"header-menu-storelocator-list-item\" data-view=\"StoreLocatorHeaderLink\"></li>\n                    <li data-view=\"RequestQuoteWizardHeaderLink\">"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Request a Quote",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":39,"column":65},"end":{"line":39,"column":96}}}))
+    + "</li-->\n"
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showLanguagesOrCurrencies") : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":40,"column":20},"end":{"line":56,"column":27}}})) != null ? stack1 : "")
+    + "                    <!--li data-view=\"QuickOrderHeaderLink\"></li-->\n                </ul>\n                \n\n                <!--div class=\"header-menu-locator-mobile\" data-view=\"StoreLocatorHeaderLink\"></div>\n                <div class=\"header-menu-searchmobile\">\n                    <button class=\"header-menu-searchmobile-link\" data-action=\"show-sitesearch\" title=\""
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Search",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":63,"column":103},"end":{"line":63,"column":125}}}))
+    + "\">\n                        <i class=\"header-menu-searchmobile-icon\"></i>\n                    </button>\n                </div-->\n				\n            </div>\n\n        </div>\n    </nav>\n</div>\n";
+},"2":function(container,depth0,helpers,partials,data) {
+    return " ischanneluc-subheader";
+},"4":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression;
+
+  return "                        <li class=\"header-subheader-settings\">\n                            <a href=\"#\" class=\"header-subheader-settings-link\" data-toggle=\"dropdown\" title=\""
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Settings",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":42,"column":109},"end":{"line":42,"column":133}}}))
+    + "\">\n                                <i class=\"header-menu-settings-icon\"></i>\n                                <i class=\"header-menu-settings-carret\"></i>\n                            </a>\n                            <div class=\"header-menu-settings-dropdown\">\n                                <h5 class=\"header-menu-settings-dropdown-title\">"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Site Settings",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":47,"column":80},"end":{"line":47,"column":109}}}))
+    + "</h5>\n"
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showLanguages") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":48,"column":32},"end":{"line":50,"column":39}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showCurrencies") : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":51,"column":32},"end":{"line":53,"column":39}}})) != null ? stack1 : "")
+    + "                            </div>\n                        </li>\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    return "                                    <div data-view=\"Global.HostSelector\"></div>\n";
+},"7":function(container,depth0,helpers,partials,data) {
+    return "                                    <div data-view=\"Global.CurrencySelector\"></div>\n";
+},"9":function(container,depth0,helpers,partials,data) {
+    return "	  <div class=\"login-and-cart\">\n		<div class=\"header-menu-profile\" data-view=\"Header.Profile\"></div>\n		<div class=\"header-menu-cart\">\n			<div class=\"header-menu-cart-dropdown\">\n				<div data-view=\"Header.MiniCart\"></div>\n			</div>\n		</div>\n	</div>\n	  <div class=\"header-secondary-wrapper\" data-view=\"Header.Menu\" data-phone-template=\"header_sidebar\" data-tablet-template=\"header_sidebar\"></div>\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "\n<div class=\"header-message\" data-view=\"Message.Placeholder\"></div>\n"
+    + ((stack1 = compilerNameLookup(helpers,"unless").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isChannelUcUserNotLogin") : depth0),{"name":"unless","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":4,"column":0},"end":{"line":73,"column":11}}})) != null ? stack1 : "")
+    + "	<div class=\"logo-and-menu\">\n	  <div class=\"header-logo-wrapper\">\n		  <div data-view=\"Header.Logo\"></div>\n	  </div>\n"
+    + ((stack1 = compilerNameLookup(helpers,"unless").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isChannelUcUserNotLogin") : depth0),{"name":"unless","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":78,"column":3},"end":{"line":88,"column":13}}})) != null ? stack1 : "")
+    + "	</div>\n	\n\n<div class=\"header-sidebar-overlay\" data-action=\"header-sidebar-hide\"></div>\n\n<div class=\"header-site-search\" data-view=\"SiteSearch\" data-type=\"SiteSearch\"></div>\n\n";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'header'; return template;});

@@ -1,0 +1,83 @@
+@mixin sc-blog-headings-font-style {
+  h1 {
+    font-family: $sc-blog-h1-font-family;
+    font-size: $sc-blog-h1-font-size;
+    font-weight: $sc-blog-h1-font-weight;
+    letter-spacing: $sc-blog-h1-letter-spacing;
+    line-height: $sc-blog-h1-line-height;
+    color: $sc-blog-h1-font-color;
+  }
+  h2 {
+    font-family: $sc-blog-h2-font-family;
+    font-size: $sc-blog-h2-font-size;
+    font-weight: $sc-blog-h2-font-weight;
+    letter-spacing: $sc-blog-h2-letter-spacing;
+    line-height: $sc-blog-h2-line-height;
+    color: $sc-blog-h2-font-color;
+  }
+  h3 {
+    font-family: $sc-blog-h3-font-family;
+    font-size: $sc-blog-h3-font-size;
+    font-weight: $sc-blog-h3-font-weight;
+    letter-spacing: $sc-blog-h3-letter-spacing;
+    line-height: $sc-blog-h3-line-height;
+    color: $sc-blog-h3-font-color;
+  }
+  h4 {
+    font-family: $sc-blog-h4-font-family;
+    font-size: $sc-blog-h4-font-size;
+    font-weight: $sc-blog-h4-font-weight;
+    letter-spacing: $sc-blog-h4-letter-spacing;
+    line-height: $sc-blog-h4-line-height;
+    color: $sc-blog-h4-font-color;
+  }
+  h5 {
+    font-family: $sc-blog-h5-font-family;
+    font-size: $sc-blog-h5-font-size;
+    font-weight: $sc-blog-h5-font-weight;
+    letter-spacing: $sc-blog-h5-letter-spacing;
+    line-height: $sc-blog-h5-line-height;
+    color: $sc-blog-h5-font-color;
+  }
+  h6 {
+    font-family: $sc-blog-h6-font-family;
+    font-size: $sc-blog-h6-font-size;
+    font-weight: $sc-blog-h6-font-weight;
+    letter-spacing: $sc-blog-h6-letter-spacing;
+    line-height: $sc-blog-h6-line-height;
+    color: $sc-blog-h6-font-color;
+  }
+}
+
+@mixin sc-blog-paragraph-font-style {
+  font-family: $sc-blog-regular-font-family;
+  color: $sc-blog-regular-font-color;
+  font-size: $sc-blog-regular-font-size;
+  letter-spacing: $sc-blog-regular-letter-spacing;
+  line-height: $sc-blog-regular-line-height;
+  font-weight: $sc-font-weight-normal;
+
+  strong, b {
+    font-weight: $sc-font-weight-bold;
+  }
+}
+
+
+@mixin sc-blog-quote-font-style {
+  font-style: italic;
+  text-indent: $sc-blog-regular-text-ident;
+  font-size: $sc-blog-regular-font-size;
+  letter-spacing: $sc-blog-regular-letter-spacing;
+  line-height: $sc-blog-regular-line-height;
+  color: $sc-blog-regular-font-color;
+}
+
+@mixin col($col-size, $mobile-padding-left, $mobile-padding-right) {
+  @extend .col-#{$col-size};
+  padding-right: $mobile-padding-right;
+  padding-left: $mobile-padding-left;
+  @media (min-width: $screen-sm-min) {
+    padding-right: $sc-padding-lv3;
+    padding-left: $sc-padding-lv3;
+  }
+}

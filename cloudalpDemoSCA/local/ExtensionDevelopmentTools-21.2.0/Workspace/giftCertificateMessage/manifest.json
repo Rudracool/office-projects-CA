@@ -1,0 +1,77 @@
+{
+    "name": "giftCertificateMessage",
+    "fantasyName": "Gift Certificate Message in salesorder",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "description": "Gift Certificate Message in salesorder",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/giftCertificateMessage.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/giftCertificateMessage/Configuration/giftCertificateMessage.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/giftCertificateMessage/Sass/_giftcertificatemessage-giftcertificatemessage.scss"
+        },
+        "files": [
+            "Modules/giftCertificateMessage/Sass/_giftcertificatemessage-giftcertificatemessage.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/giftCertificateMessage/Templates/ca_giftcertificatemessage_giftcertificatemessage.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/giftCertificateMessage/JavaScript/cloudAlp.giftCertificateMessage.giftCertificateMessage.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/giftCertificateMessage/JavaScript/giftCertificateMessage.View.js",
+                    "Modules/giftCertificateMessage/JavaScript/ca.giftCertificateMessage.giftCertificateMessage.Model.js",
+                    "Modules/giftCertificateMessage/JavaScript/ca.giftCertificateMessage.giftCertificateMessage.SS2Model.js",
+                    "Modules/giftCertificateMessage/JavaScript/cloudAlp.giftCertificateMessage.giftCertificateMessage.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/giftCertificateMessage/SuiteScript/ca.giftCertificateMessage.giftCertificateMessage.js",
+        "files": [
+            "Modules/giftCertificateMessage/SuiteScript/ca.giftCertificateMessage.giftCertificateMessage.js",
+            "Modules/giftCertificateMessage/SuiteScript/giftCertificateMessage.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\giftCertificateMessage",
+    "suitescript2": {
+        "files": [
+            "Modules/giftCertificateMessage/SuiteScript2/giftCertificateMessage.Service.ss"
+        ]
+    }
+}

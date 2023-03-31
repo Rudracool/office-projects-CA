@@ -1,0 +1,63 @@
+// Exposed variables
+$sc-blog-post-card-vertical-background: #FFFFFF; // editable({"type": "color", "label": "Card Background"})
+$sc-blog-post-card-vertical-border-color: transparent; // editable({"type": "color", "label": "Border Color"})
+$sc-blog-post-card-vertical-border-width: 0; // editable({"type": "string", "label": "Border Width"})
+$sc-blog-post-card-vertical-border-radius: 3px; // editable({"type": "string", "label": "Border Radius"})
+$sc-blog-post-card-vertical-shadow-color: rgba(202, 202, 202, 0.6); // editable({"type": "color", "label": "Shadow Color"})
+$sc-blog-post-card-vertical-title-font-family: $sc-blog-regular-font-family; // editable({"type": "string", "label": "Title Text Font Family"})
+$sc-blog-post-card-vertical-title-text-color: $sc-color-copy-dark; // editable({"type": "color", "label": "Title Text Color"})
+$sc-blog-post-card-vertical-excerpt-font-family: $sc-blog-regular-font-family; // editable({"type": "string", "label": "Excerpt Text Font Family"})
+$sc-blog-post-card-vertical-excerpt-text-color: $sc-color-copy;// editable({"type": "color", "label": "Excerpt Text Color"})
+$sc-blog-post-card-vertical-link-font-family: $sc-blog-regular-font-family; // editable({"type": "string", "label": "Link Text Font Family"})
+$sc-blog-post-card-vertical-link-text-color: $sc-color-link;// editable({"type": "color", "label": "Link Text Color"})
+
+// Card
+$sc-blog-post-card-v-background: $sc-blog-post-card-vertical-background;
+$sc-blog-post-card-v-border-radius: $sc-blog-post-card-vertical-border-radius;
+$sc-blog-post-card-v-border-width: $sc-blog-post-card-vertical-border-width;
+$sc-blog-post-card-v-border-style: solid;
+$sc-blog-post-card-v-border-color: $sc-blog-post-card-vertical-border-color;
+$sc-blog-post-card-v-box-shadow-h-offset: 0;
+$sc-blog-post-card-v-box-shadow-v-offset: 1px;
+$sc-blog-post-card-v-box-shadow-blur: 10px;
+$sc-blog-post-card-v-box-shadow-spread: 0;
+$sc-blog-post-card-v-box-shadow-color: $sc-blog-post-card-vertical-shadow-color;
+$sc-blog-post-card-v-animation: box-shadow 0.3s ease;
+
+// Category
+$sc-blog-post-card-v-category-font-size: 11px;
+$sc-blog-post-card-v-category-font-weight: 600;
+$sc-blog-post-card-v-category-letter-spacing: 1px;
+$sc-blog-post-card-v-category-line-height: 15px;
+
+// Title
+$sc-blog-post-card-v-heading-font-family: $sc-blog-post-card-vertical-title-font-family;
+$sc-blog-post-card-v-heading-color: $sc-blog-post-card-vertical-title-text-color;
+
+// Excerpt
+$sc-blog-post-card-v-excerpt-color: $sc-blog-post-card-vertical-excerpt-text-color;
+$sc-blog-post-card-v-excerpt-font-family: $sc-blog-post-card-vertical-excerpt-font-family;
+$sc-blog-post-card-v-excerpt-font-size: 15px;
+$sc-blog-post-card-v-excerpt-line-height: 20px;
+
+//Link
+$sc-blog-post-card-v-link-font-family: $sc-blog-post-card-vertical-link-font-family;
+$sc-blog-post-card-v-link-color: $sc-blog-post-card-vertical-link-text-color;
+
+// Hover styles
+$sc-blog-post-card-v-hover-background: $sc-blog-post-card-vertical-background;
+$sc-blog-post-card-v-hover-border-width: 0;
+$sc-blog-post-card-v-hover-border-style: none;
+$sc-blog-post-card-v-hover-border-color: transparent;
+$sc-blog-post-card-v-hover-box-shadow-h-offset: 0;
+$sc-blog-post-card-v-hover-box-shadow-v-offset: 5px;
+$sc-blog-post-card-v-hover-box-shadow-blur: 15px;
+$sc-blog-post-card-v-hover-box-shadow-spread: 0;
+$sc-blog-post-card-v-hover-box-shadow-color: #CACACA;
+
+// Mocks
+$sc-blog-post-card-v-mock-height-xs: 15px;
+$sc-blog-post-card-v-mock-height-s: 20px;
+
+
+

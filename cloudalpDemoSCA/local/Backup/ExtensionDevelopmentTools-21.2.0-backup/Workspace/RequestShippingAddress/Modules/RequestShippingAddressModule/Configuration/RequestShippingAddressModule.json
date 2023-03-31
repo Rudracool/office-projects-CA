@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": { 
+        "RequestShippingAddressModule.config": {
+            "group": "extensions",
+            "subtab": "RequestShippingAddressModule_subtab",
+            "type": "string",
+            "title": "RequestShippingAddressModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        },
+        "RequestShippingAddressModule.eAuthor": {
+            "group": "extensions",
+            "subtab": "RequestShippingAddressModule_subtab",
+            "type": "integer",
+            "title": "Email Author",
+            "description": "Email Author description example",
+            "default": ""
+        },
+        "RequestShippingAddressModule.eRecipient": {
+            "group": "extensions",
+            "subtab": "RequestShippingAddressModule_subtab",
+            "type": "string",
+            "title": "Email Recipient",
+            "description": "Email Recipient description example",
+            "default": ""
+        }
+    }
+}

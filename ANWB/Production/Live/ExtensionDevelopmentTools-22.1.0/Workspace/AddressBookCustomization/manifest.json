@@ -1,0 +1,74 @@
+{
+    "name": "AddressBookCustomization",
+    "fantasyName": "Address Book",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=22.1.0",
+        "SCS": ">=22.1.0"
+    },
+    "description": "Address Book Customization in checkout and my account",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/AddressBookCustomization/Sass/_addressbookcustomization-addressbookcustomization.scss",
+            "checkout": "Modules/AddressBookCustomization/Sass/_addressbookcustomization-addressbookcustomization.scss"
+        },
+        "files": [
+            "Modules/AddressBookCustomization/Sass/_addressbookcustomization-addressbookcustomization.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/AddressBookCustomization/Templates/ca_addressbookcustomization_addressbookcustomization.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/AddressBookCustomization/Templates/ca_addressbookcustomization_addressbookcustomization.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/AddressBookCustomization/JavaScript/CA.AddressBookCustomization.AddressBookCustomization.js",
+            "checkout": "Modules/AddressBookCustomization/JavaScript/CA.AddressBookCustomization.AddressBookCustomization.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/AddressBookCustomization/JavaScript/CA.AddressBookCustomization.AddressBookCustomization.js",
+                    "Modules/AddressBookCustomization/JavaScript/AddressBookCustomization.View.js",
+                    "Modules/AddressBookCustomization/JavaScript/CA.AddressBookCustomization.AddressBookCustomization.Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/AddressBookCustomization/JavaScript/CA.AddressBookCustomization.AddressBookCustomization.js",
+                    "Modules/AddressBookCustomization/JavaScript/AddressBookCustomization.View.js",
+                    "Modules/AddressBookCustomization/JavaScript/CA.AddressBookCustomization.AddressBookCustomization.Model.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\AddressBookCustomization",
+    "suitescript2": {
+        "files": []
+    }
+}

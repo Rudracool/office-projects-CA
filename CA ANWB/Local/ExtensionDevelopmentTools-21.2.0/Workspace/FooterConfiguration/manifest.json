@@ -1,0 +1,93 @@
+{
+    "name": "FooterConfiguration",
+    "fantasyName": "ANWB footer configuration",
+    "vendor": "ANWB",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "description": "ANWB footer configuration",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/FooterConfiguration/Configuration/FooterConfiguration.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/FooterConfiguration/Sass/_footerconfiguration-footerconfiguration.scss",
+            "myaccount": "Modules/FooterConfiguration/Sass/_footerconfiguration-footerconfiguration.scss",
+            "checkout": "Modules/FooterConfiguration/Sass/_footerconfiguration-footerconfiguration.scss"
+        },
+        "files": [
+            "Modules/FooterConfiguration/Sass/_footerconfiguration-footerconfiguration.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/FooterConfiguration/Templates/anwb_footerconfiguration_footerconfiguration.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/FooterConfiguration/Templates/anwb_footerconfiguration_footerconfiguration.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/FooterConfiguration/Templates/anwb_footerconfiguration_footerconfiguration.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/FooterConfiguration/JavaScript/ANWB.FooterConfiguration.FooterConfiguration.js",
+            "myaccount": "Modules/FooterConfiguration/JavaScript/ANWB.FooterConfiguration.FooterConfiguration.js",
+            "checkout": "Modules/FooterConfiguration/JavaScript/ANWB.FooterConfiguration.FooterConfiguration.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/FooterConfiguration/JavaScript/ANWB.FooterConfiguration.FooterConfiguration.js",
+                    "Modules/FooterConfiguration/JavaScript/FooterConfiguration.View.js",
+                    "Modules/FooterConfiguration/JavaScript/ANWB.FooterConfiguration.FooterConfiguration.Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/FooterConfiguration/JavaScript/ANWB.FooterConfiguration.FooterConfiguration.js",
+                    "Modules/FooterConfiguration/JavaScript/FooterConfiguration.View.js",
+                    "Modules/FooterConfiguration/JavaScript/ANWB.FooterConfiguration.FooterConfiguration.Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/FooterConfiguration/JavaScript/ANWB.FooterConfiguration.FooterConfiguration.js",
+                    "Modules/FooterConfiguration/JavaScript/FooterConfiguration.View.js",
+                    "Modules/FooterConfiguration/JavaScript/ANWB.FooterConfiguration.FooterConfiguration.Model.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\FooterConfiguration",
+    "suitescript2": {
+        "files": []
+    }
+}

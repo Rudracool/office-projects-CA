@@ -1,0 +1,229 @@
+{
+	"name": "Blog",
+	"fantasyName": "Blog",
+	"vendor": "SuiteCommerce",
+	"version": "2.1.1",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCS": ">=19.1.0",
+		"SCA": ">=19.1.0"
+	},
+	"description": "The SuiteCommerce Blog extension lets you add blog content to your website using Site Management Tools.",
+	"cct": [
+		{
+			"icon": "img/ic_cct_sc_blog_post_list.svg",
+			"settings_record": "customrecord_sc_blog_cct_blog_card",
+			"registercct_id": "cct_sc_blog_article_cards",
+			"label": "Blog Spotlight",
+			"description": "Blog Spotlight CCT"
+		}
+	],
+	"page": {
+		"types": [
+			{
+				"name": "ext-blog-post",
+				"displayName": "Blog Post",
+				"description": "Blog Post Page Type",
+				"baseUrlPath": "blog",
+				"settingsRecord": "customrecord_sc_blog_page_type_post"
+			},
+			{
+				"name": "ext-blog-list",
+				"displayName": "Blog Post List",
+				"description": "Blog Post List Page Type",
+				"cmsCreatable": "F"
+			}
+		]
+	},
+	"skins": [],
+	"assets": {
+		"img": {
+			"files": [
+				"img/ic_cct_sc_blog_post.svg",
+				"img/ic_cct_sc_blog_post_list.svg"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Common/Configuration/Configuration.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_sc_blog_shopping.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_sc_blog_shopping.scss",
+			"Modules/Post/Sass/_sc_blog_post.scss",
+			"Modules/Common/Sass/_sc_blog_common_mixins.scss",
+			"Modules/Common/Sass/_sc_blog_common_variables.scss",
+			"Modules/Common/Sass/_sc_blog_common.scss",
+			"Modules/Common/Sass/_sc_blog_common_cms_areas.scss",
+			"Modules/Post/Sass/_sc_blog_post_variables.scss",
+			"Modules/BlogHome/Sass/_sc_blog_home_variables.scss",
+			"Modules/BlogHome/Sass/_sc_blog_home.scss",
+			"Modules/PostCard/Sass/_sc_blog_post_card.scss",
+			"Modules/Common/Sass/_sc_blog_common_animation.scss",
+			"Modules/PostCard/Sass/_sc_blog_post_card_horizontal_variables.scss",
+			"Modules/PostCard/Sass/_sc_blog_post_card_horizontal.scss",
+			"Modules/PostCard/Sass/_sc_blog_post_card_vertical_variables.scss",
+			"Modules/PostCard/Sass/_sc_blog_post_card_vertical.scss",
+			"Modules/PostSearch/Sass/_sc_blog_post_search_layout.scss",
+			"Modules/PostSearch/Sass/_sc_blog_post_search_variables.scss",
+			"Modules/PostSearch/Sass/_sc_blog_post_search.scss",
+			"Modules/TaxonomyNavigation/Sass/_sc_blog_post_taxonomy_navigation_variables.scss",
+			"Modules/TaxonomyNavigation/Sass/_sc_blog_post_taxonomy_navigation.scss",
+			"Modules/Pagination/Sass/_sc_blog_pagination_layout.scss",
+			"Modules/Pagination/Sass/_sc_blog_pagination_variables.scss",
+			"Modules/Pagination/Sass/_sc_blog_pagination.scss",
+			"Modules/Common/Sass/_chevron_up.scss",
+			"Modules/TaxonomyNavigation/Sass/_sc_blog_post_taxonomy_navigation_layout.scss",
+			"Modules/PostCard/Sass/_sc_blog_post_card_horizontal_small_variation.scss",
+			"Modules/BlogHome/Sass/Layouts/Default/_sc_blog_home_default_layout_variables.scss",
+			"Modules/BlogHome/Sass/Layouts/Default/_sc_blog_home_default_layout.scss",
+			"Modules/Post/Sass/Layouts/_sc_blog_post_default_layout_variables.scss",
+			"Modules/Post/Sass/Layouts/_sc_blog_post_default_layout.scss",
+			"Modules/LatestPosts/Sass/_sc_blog_latest_posts_slide.scss",
+			"Modules/LatestPosts/Sass/_sc_blog_latest_posts.scss",
+			"Modules/LatestPosts/Sass/_sc_blog_latest_posts_variables.scss",
+			"Modules/LatestPosts/Sass/_sc_blog_latest_posts_indicators.scss",
+			"Modules/ExtCarousel/Sass/_sc_ext_carousel_layout.scss",
+			"Modules/ExtCarousel/Sass/_sc_ext_carousel.scss",
+			"Modules/BlogHome/Sass/Icons/_icons.scss",
+			"Modules/BlogHome/Sass/Icons/_rss-feed-square.scss",
+			"Modules/PostCardsCCT/Sass/_sc_blog_post_cards_cct.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Post/Template/sc_blog_post_header.tpl",
+					"Modules/Post/Template/Layouts/sc_blog_post_default_layout.tpl",
+					"Modules/Post/Template/sc_blog_post_content.tpl",
+					"Modules/Post/Template/sc_blog_post_header_image.tpl",
+					"Modules/Post/Template/sc_blog_post_category.tpl",
+					"Modules/Post/Template/sc_blog_post_footer.tpl",
+					"Modules/Post/Template/sc_blog_post_author.tpl",
+					"Modules/PostList/Template/sc_blog_post_list.tpl",
+					"Modules/PostCard/Template/sc_blog_post_card.tpl",
+					"Modules/PostCard/Template/sc_blog_post_card_dummy.tpl",
+					"Modules/PostSearch/Template/sc_blog_post_search.tpl",
+					"Modules/TaxonomyNavigation/Template/sc_blog_taxonomy_navigation_taxonomy.tpl",
+					"Modules/TaxonomyNavigation/Template/sc_blog_taxonomy_navigation.tpl",
+					"Modules/Pagination/Template/sc_blog_pagination_button.tpl",
+					"Modules/Pagination/Template/sc_blog_pagination.tpl",
+					"Modules/EmptyState/Template/sc_blog_home_empty_state.tpl",
+					"Modules/SuggestionsList/Template/sc_blog_suggestions_list.tpl",
+					"Modules/BlogHome/Template/Layouts/Default/sc_blog_home_default_layout.tpl",
+					"Modules/LatestPosts/Templates/sc_blog_latest_posts_slide.tpl",
+					"Modules/LatestPosts/Templates/sc_blog_latest_posts_indicator.tpl",
+					"Modules/ExtCarousel/Templates/sc_ext_carousel_indicator.tpl",
+					"Modules/ExtCarousel/Templates/sc_ext_carousel_slide.tpl",
+					"Modules/ExtCarousel/Templates/sc_ext_carousel.tpl",
+					"Modules/LatestPosts/Templates/sc_blog_latest_posts_slide_dummy.tpl",
+					"Modules/PostCardsCCT/Templates/sc_post_cards_cct_template.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SuiteCommerce.Blog.Shopping.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/SuiteCommerce.Blog.Shopping.js",
+					"Modules/Post/JavaScript/Post.js",
+					"Modules/Post/JavaScript/Post.Model.js",
+					"Modules/Post/JavaScript/Post.View.js",
+					"Modules/Common/JavaScript/PageTypeModel.js",
+					"Modules/Common/JavaScript/Common.js",
+					"Modules/Post/JavaScript/Post.Header.View.js",
+					"Modules/Post/JavaScript/Post.Content.View.js",
+					"Modules/Common/JavaScript/Configuration.js",
+					"Modules/Post/JavaScript/Post.Configuration.js",
+					"Modules/Post/JavaScript/Post.Header.Image.View.js",
+					"Modules/Post/JavaScript/Post.Category.View.js",
+					"Modules/Post/JavaScript/Post.Footer.View.js",
+					"Modules/DataProvider/JavaScript/DataProvider.Category.Collection.js",
+					"Modules/DataProvider/JavaScript/DataProvider.Category.Model.js",
+					"Modules/DataProvider/JavaScript/DataProvider.js",
+					"Modules/DataProvider/JavaScript/DataProvider.Author.Collection.js",
+					"Modules/DataProvider/JavaScript/DataProvider.Author.Model.js",
+					"Modules/Post/JavaScript/Post.Author.View.js",
+					"Modules/Post/JavaScript/Post.Collection.js",
+					"Modules/BlogHome/JavaScript/BlogHome.Configuration.js",
+					"Modules/BlogHome/JavaScript/BlogHome.js",
+					"Modules/BlogHome/JavaScript/BlogHome.Model.js",
+					"Modules/BlogHome/JavaScript/BlogHome.View.js",
+					"Modules/PostList/JavaScript/PostList.Model.js",
+					"Modules/PostList/JavaScript/PostList.View.js",
+					"Modules/PostCard/JavaScript/PostCard.View.js",
+					"Modules/DataProvider/JavaScript/DataProvider.File.Collection.js",
+					"Modules/DataProvider/JavaScript/DataProvider.File.Model.js",
+					"Modules/DataProvider/JavaScript/DataProvider.Model.js",
+					"Modules/PostSearch/JavaScript/PostSearch.View.js",
+					"Modules/PostSearch/JavaScript/PostSearch.Configuration.js",
+					"Modules/TaxonomyNavigation/JavaScript/TaxonomyNavigation.Configuration.js",
+					"Modules/TaxonomyNavigation/JavaScript/TaxonomyNavigation.Model.js",
+					"Modules/TaxonomyNavigation/JavaScript/TaxonomyNavigation.Taxonomy.Collection.js",
+					"Modules/TaxonomyNavigation/JavaScript/TaxonomyNavigation.Taxonomy.Model.js",
+					"Modules/TaxonomyNavigation/JavaScript/TaxonomyNavigation.Taxonomy.View.js",
+					"Modules/TaxonomyNavigation/JavaScript/TaxonomyNavigation.View.js",
+					"Modules/Common/JavaScript/BlogPostSearcher.Helper.js",
+					"Modules/DataProvider/JavaScript/DataProvider.Term.Collection.js",
+					"Modules/DataProvider/JavaScript/DataProvider.Term.Model.js",
+					"Modules/Pagination/JavaScript/Pagination.Button.Collection.js",
+					"Modules/Pagination/JavaScript/Pagination.Button.Model.js",
+					"Modules/Pagination/JavaScript/Pagination.Button.View.js",
+					"Modules/Pagination/JavaScript/Pagination.Model.js",
+					"Modules/Pagination/JavaScript/Pagination.View.js",
+					"Modules/Common/JavaScript/ParameterProcessor.js",
+					"Modules/PostSearch/JavaScript/PostSearch.Model.js",
+					"Modules/Pagination/JavaScript/Pagination.Configuration.js",
+					"Modules/EmptyState/JavaScript/EmptyState.View.js",
+					"Modules/EmptyState/JavaScript/EmptyState.Model.js",
+					"Modules/SuggestionsList/JavaScript/SuggestionsList.Model.js",
+					"Modules/SuggestionsList/JavaScript/SuggestionsList.View.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/LatestPosts/JavaScript/LatestPosts.Model.js",
+					"Modules/LatestPosts/JavaScript/LatestPosts.Slide.Collection.js",
+					"Modules/LatestPosts/JavaScript/LatestPosts.Slide.Model.js",
+					"Modules/LatestPosts/JavaScript/LatestPosts.Slide.View.js",
+					"Modules/LatestPosts/JavaScript/LatestPosts.View.js",
+					"Modules/LatestPosts/JavaScript/LatestPosts.Indicator.View.js",
+					"Modules/ExtCarousel/JavaScript/ExtCarousel.Indicator.Collection.js",
+					"Modules/ExtCarousel/JavaScript/ExtCarousel.Indicator.Model.js",
+					"Modules/ExtCarousel/JavaScript/ExtCarousel.Indicator.View.js",
+					"Modules/ExtCarousel/JavaScript/ExtCarousel.Model.js",
+					"Modules/ExtCarousel/JavaScript/ExtCarousel.Slide.View.js",
+					"Modules/ExtCarousel/JavaScript/ExtCarousel.View.js",
+					"Modules/LatestPosts/JavaScript/LatestPosts.Indicator.Model.js",
+					"Modules/ExtCarousel/JavaScript/ExtCarousel.GestureInterpreter.js",
+					"Modules/ExtCarousel/JavaScript/ExtCarousel.DOMHandler.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js",
+					"Modules/Common/JavaScript/Instrumentation.Helper.js",
+					"Modules/PostCardsCCT/JavaScript/PostCardsCCT.js",
+					"Modules/PostCardsCCT/JavaScript/PostCardsCCT.Model.js",
+					"Modules/PostCardsCCT/JavaScript/PostCardsCCT.View.js"
+				]
+			}
+		}
+	},
+	"local_folder": "Workspace\\Blog",
+	"path": "SuiteScripts/extensions/SuiteCommerce/Blog@2.1.1",
+	"activation_id": "15",
+	"extension_id": "17812"
+}

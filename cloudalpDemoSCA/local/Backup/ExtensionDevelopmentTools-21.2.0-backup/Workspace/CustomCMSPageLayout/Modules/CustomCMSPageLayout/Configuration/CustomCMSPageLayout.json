@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "CustomCMSPageLayout.config": {
+            "group": "extensions",
+            "subtab": "CustomCMSPageLayout_subtab",
+            "type": "string",
+            "title": "CustomCMSPageLayout_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

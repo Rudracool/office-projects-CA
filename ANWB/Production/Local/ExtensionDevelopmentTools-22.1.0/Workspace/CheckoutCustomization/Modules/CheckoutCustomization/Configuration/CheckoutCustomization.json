@@ -1,0 +1,27 @@
+{
+    "type":"object",
+    "subtab":{
+        "id":"checkoutcustomization",
+        "title":"Customized Error messages",
+        "description":"Displays an error message when the customer is not assigned with any address and delivery method",
+        "group":"extensions"
+    }
+,   "properties":{
+        "checkoutcustomization.AddressMessage":{
+            "group":"extensions",
+            "subtab":"checkoutcustomization",
+            "type":"string",
+            "title": "Address Error Message",
+            "description":"Displays an error message when the customer is not assigned with any address.",
+            "default": "Please contact support to add new address and for faster checkout."
+        }
+    ,   "checkoutcustomization.deliverymethodMessage":{
+            "group":"extensions",
+            "subtab":"checkoutcustomization",
+            "type":"string",
+            "title": "Delivery Method Message",
+            "description":"Displays an error message when the customer is not assigned with any delivery method. ",
+            "default": "Please Contact Support to get the Delivery method."
+        }
+    }
+}

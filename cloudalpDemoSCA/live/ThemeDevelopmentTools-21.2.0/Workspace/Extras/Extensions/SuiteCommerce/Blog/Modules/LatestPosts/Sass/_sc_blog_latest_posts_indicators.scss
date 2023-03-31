@@ -1,0 +1,53 @@
+.sc-blog-home-default-layout-latest-posts {
+  .sc-ext-carousel {
+    position: relative;
+
+    &-indicators {
+      position: absolute;
+      bottom: $sc-margin-lv4;
+      left: $sc-margin-lv2;
+      @media (min-width: $screen-sm-min) {
+        bottom: $sc-margin-lv5;
+        left: $sc-margin-lv5;
+      }
+      @media (min-width: $screen-md-min) {
+        bottom: $sc-margin-lv5;
+        left: $sc-margin-base*10;
+      }
+    }
+
+    &-indicator {
+      background-color: transparent;
+      letter-spacing: $sc-margin-lv4;
+      margin: 0;
+      cursor: pointer;
+
+      .indicator-label {
+        &:after {
+          color: $sc-color-copy-light;
+          font-weight: 900;
+          content: "-";
+        }
+      }
+
+      &.active {
+        //&:after {
+        //  content: "—";
+        //} TODO: Needs @mariano review
+        font-weight: 900;
+      }
+
+      &:last-child {
+        .indicator-label {
+          &:after {
+            content: "";
+          }
+        }
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}

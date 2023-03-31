@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "CustomBlogerSlider.config": {
+            "group": "extensions",
+            "subtab": "CustomBlogerSlider_subtab",
+            "type": "string",
+            "title": "CustomBlogerSlider_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

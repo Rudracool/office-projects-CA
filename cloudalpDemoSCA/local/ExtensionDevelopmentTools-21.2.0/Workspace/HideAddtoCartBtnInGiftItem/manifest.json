@@ -1,0 +1,92 @@
+{
+    "name": "HideAddtoCartBtnInGiftItem",
+    "fantasyName": "Add to Cart Button Not visible in Gift certificate item",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": ">=21.2.0",
+        "SCA": ">=21.2.0"
+    },
+    "description": "Add to Cart Button Not visible in Gift certificate item",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/HideAddtoCartBtnInGiftItem.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/HideAddtoCartBtnInGiftItem/Configuration/HideAddtoCartBtnInGiftItem.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/HideAddtoCartBtnInGiftItem/Sass/_hideaddtocartbtningiftitem-hideaddtocartbtningiftitem.scss",
+            "checkout": "Modules/HideAddtoCartBtnInGiftItem/Sass/_hideaddtocartbtningiftitem-hideaddtocartbtningiftitem.scss"
+        },
+        "files": [
+            "Modules/HideAddtoCartBtnInGiftItem/Sass/_hideaddtocartbtningiftitem-hideaddtocartbtningiftitem.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/HideAddtoCartBtnInGiftItem/Templates/ca_hideaddtocartbtningiftitem_hideaddtocartbtningiftitem.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/HideAddtoCartBtnInGiftItem/Templates/ca_hideaddtocartbtningiftitem_hideaddtocartbtningiftitem.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/HideAddtoCartBtnInGiftItem/JavaScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.js",
+            "checkout": "Modules/HideAddtoCartBtnInGiftItem/JavaScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/HideAddtoCartBtnInGiftItem/JavaScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.js",
+                    "Modules/HideAddtoCartBtnInGiftItem/JavaScript/HideAddtoCartBtnInGiftItem.View.js",
+                    "Modules/HideAddtoCartBtnInGiftItem/JavaScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.Model.js",
+                    "Modules/HideAddtoCartBtnInGiftItem/JavaScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/HideAddtoCartBtnInGiftItem/JavaScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.js",
+                    "Modules/HideAddtoCartBtnInGiftItem/JavaScript/HideAddtoCartBtnInGiftItem.View.js",
+                    "Modules/HideAddtoCartBtnInGiftItem/JavaScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.Model.js",
+                    "Modules/HideAddtoCartBtnInGiftItem/JavaScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/HideAddtoCartBtnInGiftItem/SuiteScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.js",
+        "files": [
+            "Modules/HideAddtoCartBtnInGiftItem/SuiteScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.js",
+            "Modules/HideAddtoCartBtnInGiftItem/SuiteScript/HideAddtoCartBtnInGiftItem.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\HideAddtoCartBtnInGiftItem",
+    "suitescript2": {
+        "files": [
+            "Modules/HideAddtoCartBtnInGiftItem/SuiteScript2/HideAddtoCartBtnInGiftItem.Service.ss"
+        ]
+    }
+}

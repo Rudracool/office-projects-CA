@@ -1,0 +1,141 @@
+
+.jabra-cms{
+    // @extend .container;
+    p{
+      font-weight: lighter;
+    }
+  }
+  $yellow-bt:#ffd300;
+  .jabra-cms-area-1{
+    @extend .row;
+    margin-bottom:40px;
+    .jabra-cms-area-1-img{
+      @extend .col-sm-6;
+    }
+   //jabra-cms-area-1-content
+   .jabra-cms-area-1-content{
+       .jabra-cms-area-1-content-text{
+      @extend .col-sm-3;
+      h4{
+        margin: 15px 0 15px 0;
+      }
+      h6{
+        color: black;
+      }
+      .jabra-bt1{
+        padding:5px;
+        h5{
+          color: black;
+        }
+        margin: 15px 0 15px 0;
+        background-color: $yellow-bt;
+        p{
+          text-align: initial;
+        }
+      }
+  
+     }
+  
+     .jabra-cms-area-1-sub-content{
+      @extend .col-sm-3;
+     }
+   }
+  
+  
+  
+  }
+  
+  .jabra-bt2{
+    // margin-top: 15px;
+    background-color: $yellow-bt;
+    text-align: center;
+    width: 49%;
+    height: 35px;
+    border-radius: 5px;
+    a{
+      font-size: 18px;
+      color: black;
+    }
+  }
+  @media (max-width:$screen-xs-max){
+    
+  .jabra-bt2{
+    width: 90%;
+    margin: 15px;
+  }
+  .jabra-cms-area-1-content{
+    display: flex;
+    margin-top: 80px;
+  }
+  
+  
+  }
+  
+  // jabra-cms-area-2
+  
+  .jabra-cms-area-2{
+    @extend .col-sm-12;
+     margin-top: 40px;
+     margin-bottom: 40px;
+  }
+  // jabra-cms-area-2
+  .jabra-cms-area-3{
+    margin-top: 80px;
+    @extend .row;
+    .jabra-cms-area-3-content-text{
+      @extend .col-sm-6;
+      h4{
+        margin: 15px 0 15px 0;
+      }
+      h6{
+        color: black;
+      }
+      .jabra-bt3{
+        padding:5px;
+        h5{
+          color: black;
+        }
+        margin: 15px 0 15px 0;
+        background-color: $yellow-bt;
+        p{
+          text-align: initial;
+        }
+      }
+  
+      .jabra-bt4{
+        // margin-top: 15px;
+        background-color: $yellow-bt;
+             
+        text-align: center;
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        margin-top: 60px;
+        a{
+          font-size: 18px;
+          color: black;
+        }
+      }
+    }
+    .jabra-cms-area-3-sub-content{
+      @extend .col-sm-6;
+    }
+  
+  
+  }
+  @media (max-width:$screen-xs-max){
+    
+  
+    .jabra-cms-area-3{
+      display: flex;
+   .jabra-cms-area-3-content-text{
+      .jabra-bt4{
+        width:200%;
+    
+      }
+    }
+  
+    }
+    
+    
+    }

@@ -1,0 +1,37 @@
+define('subscriptions_addon_details.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"1":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing;
+
+  return "        <div class=\"subscriptions-addon-details-description\">\r\n            <h3>"
+    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Description",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":23,"column":16},"end":{"line":23,"column":43}}}))
+    + "</h3>\r\n            <p>"
+    + ((stack1 = ((helper = (helper = compilerNameLookup(helpers,"description") || (depth0 != null ? compilerNameLookup(depth0,"description") : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"description","hash":{},"data":data,"loc":{"start":{"line":24,"column":15},"end":{"line":24,"column":32}}}) : helper))) != null ? stack1 : "")
+    + "</p>\r\n        </div>\r\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    return "            <div class=\"subscriptions-addon-details-row-fluid\">\r\n                <button class=\"subscriptions-addon-details-button-continue\" data-action=\"continue\">\r\n                    "
+    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Continue",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":34,"column":20},"end":{"line":34,"column":44}}}))
+    + "\r\n                </button>\r\n            </div>\r\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    return "        <button class=\"subscriptions-addon-details-button-cancel\" data-action=\"cancel\">Cancel Add-On</button>\r\n";
+},"7":function(container,depth0,helpers,partials,data) {
+    return "            <p class=\"subscriptions-addon-details-summary-message-info\">"
+    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Costs will be prorated to the current subscription billing period",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":42,"column":72},"end":{"line":42,"column":153}}}))
+    + "</p>\r\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<div class=\"subscriptions-addon-details-main-content\">\r\n    <div class=\"subscriptions-addon-details-col\">\r\n        <h2 class=\"subscriptions-addon-details-content-header-title\" >"
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"displayName") || (depth0 != null ? compilerNameLookup(depth0,"displayName") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"displayName","hash":{},"data":data,"loc":{"start":{"line":3,"column":70},"end":{"line":3,"column":85}}}) : helper)))
+    + "</h2>\r\n        <div class=\"subscriptions-addon-details-row\">\r\n        <div class=\"subscriptions-addon-details-left-col\">\r\n            <div class=\"subscriptions-addon-details-image-gallery-container\">\r\n                <div id=\"banner-image-top\" class=\"subscriptions-addon-details-content-banner\"></div>\r\n                <div class=\"subscriptions-addon-details-image-gallery\">\r\n                    <img class=\"subscriptions-addon-details-center-block\" src=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"imageUrl") || (depth0 != null ? compilerNameLookup(depth0,"imageUrl") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"imageUrl","hash":{},"data":data,"loc":{"start":{"line":9,"column":79},"end":{"line":9,"column":91}}}) : helper)))
+    + "\" alt=\"\" itemprop=\"image\" data-loader=\"false\" data-id=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"internalId") || (depth0 != null ? compilerNameLookup(depth0,"internalId") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"internalId","hash":{},"data":data,"loc":{"start":{"line":9,"column":146},"end":{"line":9,"column":160}}}) : helper)))
+    + "\">\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"subscriptions-addon-details-right-col\">\r\n            <div class=\"subscriptions-addon-details-price\">"
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"itemPrice") || (depth0 != null ? compilerNameLookup(depth0,"itemPrice") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"itemPrice","hash":{},"data":data,"loc":{"start":{"line":15,"column":59},"end":{"line":15,"column":72}}}) : helper)))
+    + "</div>\r\n            <div data-view=\"Quantity.Amount\"></div>\r\n            <div data-view=\"Quantity.Pricing\"></div>\r\n        </div>\r\n        </div>\r\n\r\n"
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"hasDescription") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":21,"column":8},"end":{"line":26,"column":15}}})) != null ? stack1 : "")
+    + "\r\n    </div>\r\n    <div class=\"subscriptions-addon-details-summary\">\r\n        <div class=\"subscriptions-addon-details-summary-container\" data-view=\"Summary.View\"></div>\r\n"
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showContinueButton") : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":31,"column":8},"end":{"line":37,"column":15}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showCancelButton") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":38,"column":8},"end":{"line":40,"column":15}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showInfoMessage") : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":41,"column":8},"end":{"line":43,"column":15}}})) != null ? stack1 : "")
+    + "    </div>\r\n</div>\r\n";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Mothrecare/MotherCareTheme/3.0.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Mothrecare/MotherCareTheme/3.0.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'subscriptions_addon_details'; return template;});

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "GiftcertificateMessage.config": {
+            "group": "extensions",
+            "subtab": "GiftcertificateMessage_subtab",
+            "type": "string",
+            "title": "GiftcertificateMessage_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

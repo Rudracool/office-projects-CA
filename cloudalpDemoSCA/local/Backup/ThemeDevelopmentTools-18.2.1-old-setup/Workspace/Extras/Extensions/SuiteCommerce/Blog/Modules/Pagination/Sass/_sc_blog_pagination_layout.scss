@@ -1,0 +1,38 @@
+.sc-blog-pagination {
+  &-title {
+    color: $sc-blog-pagination-title-color;
+  }
+
+  &-buttons {
+    li {
+      display: inline;
+      margin-bottom: $sc-margin-lv2;
+
+      &.pagination-active-page {
+        font-weight: $sc-blog-pagination-active-button-font-weight;
+        color: $sc-blog-pagination-active-button-font-color;
+      }
+
+      a {
+        font-weight: $sc-blog-pagination-button-font-weight;
+        color: $sc-blog-pagination-button-font-color;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+
+      .pagination-button-divider {
+        &:before {
+          content: $sc-blog-pagination-button-separator;
+        }
+        font-weight: $sc-blog-pagination-button-font-weight;
+      }
+
+      &:first-child {
+        .pagination-button-divider {
+          display: none;
+        }
+      }
+    }
+  }
+}

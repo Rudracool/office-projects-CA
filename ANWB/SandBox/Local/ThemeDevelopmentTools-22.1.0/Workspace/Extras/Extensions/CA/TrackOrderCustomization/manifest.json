@@ -1,0 +1,72 @@
+{
+	"name": "TrackOrderCustomization",
+	"fantasyName": "Tracking Order Customization",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=22.1.0",
+		"SCS": ">=22.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Tracking Order Customization In My Acccount",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/TrackOrderCustomization.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/TrackOrderCustomization/Templates/ca_trackordercustomization_trackordercustomization.tpl",
+					"Modules/TrackOrderCustomization/Templates/trackorder_details_customization.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/TrackOrderCustomization/Sass/_trackordercustomization-trackordercustomization.scss"
+		},
+		"files": [
+			"Modules/TrackOrderCustomization/Sass/_trackordercustomization-trackordercustomization.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/TrackOrderCustomization/JavaScript/CA.TrackOrderCustomization.TrackOrderCustomization.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/TrackOrderCustomization/JavaScript/CA.TrackOrderCustomization.TrackOrderCustomization.js",
+					"Modules/TrackOrderCustomization/JavaScript/TrackOrderCustomization.View.js",
+					"Modules/TrackOrderCustomization/JavaScript/CA.TrackOrderCustomization.TrackOrderCustomization.Model.js",
+					"Modules/TrackOrderCustomization/JavaScript/TrackOrderHistoryCustomization.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/TrackOrderCustomization/SuiteScript/CA.TrackOrderCustomization.TrackOrderCustomization.js",
+		"files": [
+			"Modules/TrackOrderCustomization/SuiteScript/CA.TrackOrderCustomization.TrackOrderCustomization.js",
+			"Modules/TrackOrderCustomization/SuiteScript/TrackOrderCustomization.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CA/TrackOrderCustomization@1.0.0",
+	"activation_id": "2",
+	"extension_id": "1001"
+}

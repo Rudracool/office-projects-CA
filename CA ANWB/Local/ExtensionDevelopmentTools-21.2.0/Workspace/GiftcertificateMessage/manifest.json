@@ -1,0 +1,107 @@
+{
+    "name": "GiftcertificateMessage",
+    "fantasyName": "gift cetificate message in salesorder",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": ">=21.2.0",
+        "SCA": ">=21.2.0"
+    },
+    "description": "gift cetificate message in salesorder",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/GiftcertificateMessage.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/GiftcertificateMessage/Configuration/GiftcertificateMessage.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/GiftcertificateMessage/Sass/_giftcertificatemessage-giftcertificatemessage.scss",
+            "myaccount": "Modules/GiftcertificateMessage/Sass/_giftcertificatemessage-giftcertificatemessage.scss",
+            "checkout": "Modules/GiftcertificateMessage/Sass/_giftcertificatemessage-giftcertificatemessage.scss"
+        },
+        "files": [
+            "Modules/GiftcertificateMessage/Sass/_giftcertificatemessage-giftcertificatemessage.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/GiftcertificateMessage/Templates/ca_giftcertificatemessage_giftcertificatemessage.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/GiftcertificateMessage/Templates/ca_giftcertificatemessage_giftcertificatemessage.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/GiftcertificateMessage/Templates/ca_giftcertificatemessage_giftcertificatemessage.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/GiftcertificateMessage/JavaScript/CA.GiftcertificateMessage.GiftcertificateMessage.js",
+            "myaccount": "Modules/GiftcertificateMessage/JavaScript/CA.GiftcertificateMessage.GiftcertificateMessage.js",
+            "checkout": "Modules/GiftcertificateMessage/JavaScript/CA.GiftcertificateMessage.GiftcertificateMessage.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/GiftcertificateMessage/JavaScript/CA.GiftcertificateMessage.GiftcertificateMessage.js",
+                    "Modules/GiftcertificateMessage/JavaScript/GiftcertificateMessage.View.js",
+                    "Modules/GiftcertificateMessage/JavaScript/CA.GiftcertificateMessage.GiftcertificateMessage.Model.js",
+                    "Modules/GiftcertificateMessage/JavaScript/CA.GiftcertificateMessage.GiftcertificateMessage.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/GiftcertificateMessage/JavaScript/CA.GiftcertificateMessage.GiftcertificateMessage.js",
+                    "Modules/GiftcertificateMessage/JavaScript/GiftcertificateMessage.View.js",
+                    "Modules/GiftcertificateMessage/JavaScript/CA.GiftcertificateMessage.GiftcertificateMessage.Model.js",
+                    "Modules/GiftcertificateMessage/JavaScript/CA.GiftcertificateMessage.GiftcertificateMessage.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/GiftcertificateMessage/JavaScript/CA.GiftcertificateMessage.GiftcertificateMessage.js",
+                    "Modules/GiftcertificateMessage/JavaScript/GiftcertificateMessage.View.js",
+                    "Modules/GiftcertificateMessage/JavaScript/CA.GiftcertificateMessage.GiftcertificateMessage.Model.js",
+                    "Modules/GiftcertificateMessage/JavaScript/CA.GiftcertificateMessage.GiftcertificateMessage.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/GiftcertificateMessage/SuiteScript/CA.GiftcertificateMessage.GiftcertificateMessage.js",
+        "files": [
+            "Modules/GiftcertificateMessage/SuiteScript/CA.GiftcertificateMessage.GiftcertificateMessage.js",
+            "Modules/GiftcertificateMessage/SuiteScript/GiftcertificateMessage.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\GiftcertificateMessage",
+    "suitescript2": {
+        "files": [
+            "Modules/GiftcertificateMessage/SuiteScript2/GiftcertificateMessage.Service.ss"
+        ]
+    }
+}

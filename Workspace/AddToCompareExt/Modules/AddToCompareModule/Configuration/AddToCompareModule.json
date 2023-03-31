@@ -1,0 +1,84 @@
+{
+    "type": "object",
+    "subtab": {
+      "id": "addtocompare",
+      "title": "Add To Compare",
+      "description": "Extensions configuration",
+      "group": "extensions"
+    },
+    "properties": { 
+        "AddToCompareModule.config": {
+            "group": "extensions",
+            "subtab": "AddToCompareModule_subtab",
+            "type": "string",
+            "title": "AddToCompareModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        },
+        "addtocompare.comparisonPageShowAddToCartButton":{
+            "group": "extensions",
+            "subtab": "addtocompare",
+            "type": "boolean",
+            "title": "Show Add To Cart Button",
+            "description": "Check this box to include the Add to cart button in the comparison table.",
+            "default": true
+          },
+          "addtocompare.comparisonPageTitle":{
+            "group": "extensions",
+            "subtab": "addtocompare",
+            "type": "string",
+            "title": "Show Add To Cart Button",
+            "description": "Check this box to include the Add to cart button in the comparison table.",
+            "default": "Comparison Page"
+          },
+          "addtocompare.comparisonPageAddToCartButtonLabel":{
+            "group": "extensions",
+            "subtab": "addtocompare",
+            "type": "string",
+            "title": "Add to cart button label - Comparison Page",
+            "description": "Enter a label for the Add to cart button in the comparison table.",
+            "default": "Add to cart",
+            "mandatory": true
+          },
+        "addtocompare.itemFields": {
+            "group": "extensions",
+            "subtab": "addtocompare",
+            "type": "array",
+            "title": "Item Fields - Comparison Page",
+            "description": "Add each field you want to display in the comparison chart. You can add both standard or custom fields.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "fieldId": {
+                  "type": "string",
+                  "title": "Field Id",
+                  "description": "Sets the internal field ID of the field to display",
+                  "mandatory": true
+                },
+                "label": {
+                  "type": "string",
+                  "title": "Label",
+                  "description": "Sets the label for the field to display on the left side of the comparison chart.",
+                  "mandatory": true
+                },
+                "type": {
+                  "type": "string",
+                  "title": "Show as",
+                  "description": "Determines how the field displays.",
+                  "enum": ["Text","Check/Cross"],
+                  "mandatory": true
+                }
+              }
+            },
+            "default": [
+              {
+                "fieldId": "storedetaileddescription",
+                "label": "Details",
+                "type": "Text"
+              }
+            ]
+        }
+    }
+    
+}
+

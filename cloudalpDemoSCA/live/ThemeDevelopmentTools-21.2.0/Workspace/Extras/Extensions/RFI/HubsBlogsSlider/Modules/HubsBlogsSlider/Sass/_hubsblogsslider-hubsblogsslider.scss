@@ -1,0 +1,152 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/
+
+.hubsblogsslider-info-card {
+    @extend .info-card;
+}
+
+.hubsblogsslider-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+
+
+
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/
+
+.customblogerslider-info-card {
+	@extend .info-card;
+}
+
+.customblogerslider-info-card-content {
+	@extend .info-card-content;
+	color: $sc-color-secondary;
+	font-weight: bold;
+}
+.custom-blogs-slides {
+position: relative;
+}
+.blogs-content {
+position: absolute;
+bottom: 0;
+/* background: aliceblue; */
+padding: 10px 51px;
+}
+.blogs-content-bg {
+background: white;
+opacity: 0.7;
+}
+p.blogs-text {
+padding: 10px 10px 5px 10px;
+line-height:19px;
+color:black;
+}
+.blog-redirect {
+text-align: center;
+padding:5px;
+}
+a.blogs-page-link {
+border: 2px solid #002D72;
+padding:4px;
+}
+
+.hubs-blogs-slick-slider{
+background: #ECECEC;
+padding-top: 5px;
+.slick-slide {
+	margin: 0px 5px;
+}
+.slick-slide img {
+	width: 100%;
+	height: 400px;
+}
+.slick-next {
+right: 100px;
+top:35%;
+}
+.slick-next:before {
+font-size: 70px;
+line-height: 1;
+color: #f3f6f8 !important;
+opacity: 0.75;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.slick-prev {
+left: 89px;
+top:35%;
+
+/* position: fixed; */
+z-index: 10;
+}
+.slick-prev:before{
+font-size: 70px;
+line-height: 1;
+color: #f3f6f8 !important;
+opacity: 0.75;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+}
+@media(max-width:$screen-xs){
+.hubs-hubs-hubs-blogs-slick-slider{
+.slick-slide img {
+	width: 100%;
+	height:200px;
+}
+.slick-prev{
+	top:30%;
+	left: 47px;
+	&::before{
+		font-size:53px
+	}
+}
+.slick-next {
+		top:30%;
+		right: 55px;
+		&::before{
+			font-size:53px
+		}
+	}
+}
+}
+@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+.hubs-blogs-slick-slider{
+	.blogs-content{
+		margin:$sc-margin-lv1;
+		padding:0px
+	}
+	.slick-slide img {
+		width: 100%;
+		height:270px;
+}
+	.slick-prev{
+		top:35%;
+		&::before{
+			font-size:55px
+		}
+	}
+	.slick-next {
+			top:35%;
+			&::before{
+				font-size:55
+				px
+			}
+		}
+	}
+}

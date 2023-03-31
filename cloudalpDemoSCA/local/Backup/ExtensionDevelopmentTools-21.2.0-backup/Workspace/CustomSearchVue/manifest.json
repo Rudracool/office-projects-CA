@@ -1,0 +1,79 @@
+{
+    "name": "CustomSearchVue",
+    "fantasyName": "CustomSearchVue",
+    "vendor": "STAXS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "description": "search funcation using vue js",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/CustomSearchVue.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/CustomSearchVue/Configuration/CustomSearchVue.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/CustomSearchVue/Sass/_customsearchvue-customsearchvue.scss"
+        },
+        "files": [
+            "Modules/CustomSearchVue/Sass/_customsearchvue-customsearchvue.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/CustomSearchVue/Templates/staxs_customsearchvue_customsearchvue.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/CustomSearchVue/JavaScript/STAXS.CustomSearchVue.CustomSearchVue.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/CustomSearchVue/JavaScript/STAXS.CustomSearchVue.CustomSearchVue.js",
+                    "Modules/CustomSearchVue/JavaScript/CustomSearchVue.View.js",
+                    "Modules/CustomSearchVue/JavaScript/STAXS.CustomSearchVue.CustomSearchVue.Model.js",
+                    "Modules/CustomSearchVue/JavaScript/STAXS.CustomSearchVue.CustomSearchVue.SS2Model.js",
+                    "Modules/lodash/JavaScript/lodash.js",
+                    "Modules/vue/JavaScript/vue.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/CustomSearchVue/SuiteScript/STAXS.CustomSearchVue.CustomSearchVue.js",
+        "files": [
+            "Modules/CustomSearchVue/SuiteScript/STAXS.CustomSearchVue.CustomSearchVue.js",
+            "Modules/CustomSearchVue/SuiteScript/CustomSearchVue.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\CustomSearchVue",
+    "suitescript2": {
+        "files": [
+            "Modules/CustomSearchVue/SuiteScript2/CustomSearchVue.Service.ss"
+        ]
+    }
+}

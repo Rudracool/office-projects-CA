@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "UserFilterModule.config": {
+            "group": "extensions",
+            "subtab": "UserFilterModule_subtab",
+            "type": "string",
+            "title": "UserFilterModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

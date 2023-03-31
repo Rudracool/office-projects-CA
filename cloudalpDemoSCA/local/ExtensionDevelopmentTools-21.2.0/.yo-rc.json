@@ -1,0 +1,26 @@
+{
+  "generator-extension": {
+    "ext_application": {
+      "giftCertificateMessage": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ],
+      "GiftCardEmailSend": [
+        "checkout"
+      ],
+      "stockDetailsInPurchaseHistory": [
+        "myaccount"
+      ],
+      "HideAddtoCartBtnInGiftItem": [
+        "shopping",
+        "checkout"
+      ],
+      "OfferModalPopupAfterLogin": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ]
+    }
+  }
+}

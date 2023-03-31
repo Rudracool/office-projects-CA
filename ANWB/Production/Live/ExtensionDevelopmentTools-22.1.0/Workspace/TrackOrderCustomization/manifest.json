@@ -1,0 +1,71 @@
+{
+    "name": "TrackOrderCustomization",
+    "fantasyName": "Tracking Order Customization",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=22.1.0",
+        "SCS": ">=22.1.0"
+    },
+    "description": "Tracking Order Customization In My Acccount",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/TrackOrderCustomization.Service.ss"
+            ]
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/TrackOrderCustomization/Sass/_trackordercustomization-trackordercustomization.scss"
+        },
+        "files": [
+            "Modules/TrackOrderCustomization/Sass/_trackordercustomization-trackordercustomization.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/TrackOrderCustomization/Templates/ca_trackordercustomization_trackordercustomization.tpl",
+                    "Modules/TrackOrderCustomization/Templates/trackorder_details_customization.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/TrackOrderCustomization/JavaScript/CA.TrackOrderCustomization.TrackOrderCustomization.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/TrackOrderCustomization/JavaScript/CA.TrackOrderCustomization.TrackOrderCustomization.js",
+                    "Modules/TrackOrderCustomization/JavaScript/TrackOrderCustomization.View.js",
+                    "Modules/TrackOrderCustomization/JavaScript/CA.TrackOrderCustomization.TrackOrderCustomization.Model.js",
+                    "Modules/TrackOrderCustomization/JavaScript/TrackOrderHistoryCustomization.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/TrackOrderCustomization/SuiteScript/CA.TrackOrderCustomization.TrackOrderCustomization.js",
+        "files": [
+            "Modules/TrackOrderCustomization/SuiteScript/CA.TrackOrderCustomization.TrackOrderCustomization.js",
+            "Modules/TrackOrderCustomization/SuiteScript/TrackOrderCustomization.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\TrackOrderCustomization",
+    "suitescript2": {
+        "files": []
+    }
+}

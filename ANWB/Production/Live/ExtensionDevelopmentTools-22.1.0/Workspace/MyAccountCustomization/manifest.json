@@ -1,0 +1,102 @@
+{
+    "name": "MyAccountCustomization",
+    "fantasyName": "My Account Customization",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=22.1.0",
+        "SCS": ">=22.1.0"
+    },
+    "description": "My Account Customization over the Webstore",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/MyAccountCustomization.Service.ss"
+            ]
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/MyAccountCustomization/Sass/_myaccountcustomization-myaccountcustomization.scss",
+            "myaccount": "Modules/MyAccountCustomization/Sass/_myaccountcustomization-myaccountcustomization.scss",
+            "checkout": "Modules/MyAccountCustomization/Sass/_myaccountcustomization-myaccountcustomization.scss"
+        },
+        "files": [
+            "Modules/MyAccountCustomization/Sass/_myaccountcustomization-myaccountcustomization.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/MyAccountCustomization/Templates/ca_myaccountcustomization_myaccountcustomization.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/MyAccountCustomization/Templates/ca_myaccountcustomization_myaccountcustomization.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/MyAccountCustomization/Templates/ca_myaccountcustomization_myaccountcustomization.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/MyAccountCustomization/JavaScript/CA.MyAccountCustomization.MyAccountCustomization.js",
+            "myaccount": "Modules/MyAccountCustomization/JavaScript/CA.MyAccountCustomization.MyAccountCustomization.js",
+            "checkout": "Modules/MyAccountCustomization/JavaScript/CA.MyAccountCustomization.MyAccountCustomization.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/MyAccountCustomization/JavaScript/CA.MyAccountCustomization.MyAccountCustomization.js",
+                    "Modules/MyAccountCustomization/JavaScript/MyAccountCustomization.View.js",
+                    "Modules/MyAccountCustomization/JavaScript/CA.MyAccountCustomization.MyAccountCustomization.Model.js",
+                    "Modules/MyAccountCustomization/JavaScript/CA.MyAccountCustomization.MyAccountCustomization.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/MyAccountCustomization/JavaScript/CA.MyAccountCustomization.MyAccountCustomization.js",
+                    "Modules/MyAccountCustomization/JavaScript/MyAccountCustomization.View.js",
+                    "Modules/MyAccountCustomization/JavaScript/CA.MyAccountCustomization.MyAccountCustomization.Model.js",
+                    "Modules/MyAccountCustomization/JavaScript/CA.MyAccountCustomization.MyAccountCustomization.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/MyAccountCustomization/JavaScript/CA.MyAccountCustomization.MyAccountCustomization.js",
+                    "Modules/MyAccountCustomization/JavaScript/MyAccountCustomization.View.js",
+                    "Modules/MyAccountCustomization/JavaScript/CA.MyAccountCustomization.MyAccountCustomization.Model.js",
+                    "Modules/MyAccountCustomization/JavaScript/CA.MyAccountCustomization.MyAccountCustomization.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/MyAccountCustomization/SuiteScript/CA.MyAccountCustomization.MyAccountCustomization.js",
+        "files": [
+            "Modules/MyAccountCustomization/SuiteScript/CA.MyAccountCustomization.MyAccountCustomization.js",
+            "Modules/MyAccountCustomization/SuiteScript/MyAccountCustomization.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\MyAccountCustomization",
+    "suitescript2": {
+        "files": [
+            "Modules/MyAccountCustomization/SuiteScript2/MyAccountCustomization.Service.ss"
+        ]
+    }
+}

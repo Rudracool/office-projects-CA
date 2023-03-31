@@ -1,0 +1,72 @@
+{
+	"name": "GiftCardEmailSend",
+	"fantasyName": "Send Email For Gift Card",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "Send Email For Gift Card",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/GiftCardEmailSend.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/GiftCardEmailSend/Configuration/GiftCardEmailSend.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/GiftCardEmailSend/Templates/ca_giftcardemailsend_giftcardemailsend.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/GiftCardEmailSend/Sass/_giftcardemailsend-giftcardemailsend.scss"
+		},
+		"files": [
+			"Modules/GiftCardEmailSend/Sass/_giftcardemailsend-giftcardemailsend.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/GiftCardEmailSend/JavaScript/CA.GiftCardEmailSend.GiftCardEmailSend.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/GiftCardEmailSend/JavaScript/CA.GiftCardEmailSend.GiftCardEmailSend.js",
+					"Modules/GiftCardEmailSend/JavaScript/GiftCardEmailSend.View.js",
+					"Modules/GiftCardEmailSend/JavaScript/CA.GiftCardEmailSend.GiftCardEmailSend.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/GiftCardEmailSend/SuiteScript/CA.GiftCardEmailSend.GiftCardEmailSend.js",
+		"files": [
+			"Modules/GiftCardEmailSend/SuiteScript/CA.GiftCardEmailSend.GiftCardEmailSend.js",
+			"Modules/GiftCardEmailSend/SuiteScript/GiftCardEmailSend.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ca/GiftCardEmailSend@1.0.0",
+	"activation_id": "15",
+	"extension_id": "19812"
+}

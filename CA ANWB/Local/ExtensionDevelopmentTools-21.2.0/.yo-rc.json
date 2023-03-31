@@ -1,0 +1,16 @@
+{
+  "generator-extension": {
+    "ext_application": {
+      "FooterConfiguration": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ],
+      "GiftcertificateMessage": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ]
+    }
+  }
+}

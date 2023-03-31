@@ -1,0 +1,74 @@
+{
+    "name": "surchargeCreditcard",
+    "fantasyName": "Add surcharge on creditcard in checkout",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": ">=21.2.0",
+        "SCA": ">=21.2.0"
+    },
+    "description": "Add surcharge on creditcard in checkout",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/surchargeCreditcard.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/surchargeCreditcard/Configuration/surchargeCreditcard.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/surchargeCreditcard/Sass/_surchargecreditcard-surchargecreditcard.scss"
+        },
+        "files": [
+            "Modules/surchargeCreditcard/Sass/_surchargecreditcard-surchargecreditcard.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/surchargeCreditcard/Templates/ca_surchargecreditcard_surchargecreditcard.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/surchargeCreditcard/JavaScript/CA.surchargeCreditcard.surchargeCreditcard.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/surchargeCreditcard/JavaScript/CA.surchargeCreditcard.surchargeCreditcard.js",
+                    "Modules/surchargeCreditcard/JavaScript/surchargeCreditcard.View.js",
+                    "Modules/surchargeCreditcard/JavaScript/CA.surchargeCreditcard.surchargeCreditcard.Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/surchargeCreditcard/SuiteScript/CA.surchargeCreditcard.surchargeCreditcard.js",
+        "files": [
+            "Modules/surchargeCreditcard/SuiteScript/CA.surchargeCreditcard.surchargeCreditcard.js",
+            "Modules/surchargeCreditcard/SuiteScript/surchargeCreditcard.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\surchargeCreditcard",
+    "suitescript2": {
+        "files": []
+    }
+}

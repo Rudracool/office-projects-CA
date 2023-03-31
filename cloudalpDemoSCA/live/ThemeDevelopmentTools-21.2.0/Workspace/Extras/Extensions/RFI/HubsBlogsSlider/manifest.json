@@ -1,0 +1,81 @@
+{
+	"name": "HubsBlogsSlider",
+	"fantasyName": "HubsBlogsSlider",
+	"vendor": "RFI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "show blogs has slider in home page",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/HubsBlogsSlider.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/HubsBlogsSlider/Configuration/HubsBlogsSlider.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HubsBlogsSlider/Templates/rfi_hubsblogsslider_hubsblogsslider.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/HubsBlogsSlider/Sass/_hubsblogsslider-hubsblogsslider.scss"
+		},
+		"files": [
+			"Modules/HubsBlogsSlider/Sass/_hubsblogsslider-hubsblogsslider.scss",
+			"Modules/HubsBlogsSlider/Sass/slick-theme.scss",
+			"Modules/HubsBlogsSlider/Sass/slick.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/HubsBlogsSlider/JavaScript/RFI.HubsBlogsSlider.HubsBlogsSlider.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HubsBlogsSlider/JavaScript/RFI.HubsBlogsSlider.HubsBlogsSlider.js",
+					"Modules/HubsBlogsSlider/JavaScript/HubsBlogsSlider.View.js",
+					"Modules/HubsBlogsSlider/JavaScript/RFI.HubsBlogsSlider.HubsBlogsSlider.Model.js",
+					"Modules/HubsBlogsSlider/JavaScript/RFI.HubsBlogsSlider.HubsBlogsSlider.SS2Model.js",
+					"Modules/jquery.slick/Javascript/jquery.slick.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/HubsBlogsSlider/SuiteScript/RFI.HubsBlogsSlider.HubsBlogsSlider.js",
+		"files": [
+			"Modules/HubsBlogsSlider/SuiteScript/RFI.HubsBlogsSlider.HubsBlogsSlider.js",
+			"Modules/HubsBlogsSlider/SuiteScript/HubsBlogsSlider.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/HubsBlogsSlider/SuiteScript2/HubsBlogsSlider.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/rfi/HubsBlogsSlider@1.0.0",
+	"activation_id": "15",
+	"extension_id": "18912"
+}

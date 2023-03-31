@@ -1,0 +1,73 @@
+{
+	"name": "HideAddtoCartBtnInGiftItem",
+	"fantasyName": "Add to Cart Button Not visible in Gift certificate item",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=22.1.0",
+		"SCS": ">=22.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Add to Cart Button Not visible in Gift certificate item",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/HideAddtoCartBtnInGiftItem.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HideAddtoCartBtnInGiftItem/Templates/ca_hideaddtocartbtningiftitem_hideaddtocartbtningiftitem.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/HideAddtoCartBtnInGiftItem/Sass/_hideaddtocartbtningiftitem-hideaddtocartbtningiftitem.scss"
+		},
+		"files": [
+			"Modules/HideAddtoCartBtnInGiftItem/Sass/_hideaddtocartbtningiftitem-hideaddtocartbtningiftitem.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/HideAddtoCartBtnInGiftItem/JavaScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HideAddtoCartBtnInGiftItem/JavaScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.js",
+					"Modules/HideAddtoCartBtnInGiftItem/JavaScript/HideAddtoCartBtnInGiftItem.View.js",
+					"Modules/HideAddtoCartBtnInGiftItem/JavaScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.Model.js",
+					"Modules/HideAddtoCartBtnInGiftItem/JavaScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/HideAddtoCartBtnInGiftItem/SuiteScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.js",
+		"files": [
+			"Modules/HideAddtoCartBtnInGiftItem/SuiteScript/CA.HideAddtoCartBtnInGiftItem.HideAddtoCartBtnInGiftItem.js",
+			"Modules/HideAddtoCartBtnInGiftItem/SuiteScript/HideAddtoCartBtnInGiftItem.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/HideAddtoCartBtnInGiftItem/SuiteScript2/HideAddtoCartBtnInGiftItem.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CA/HideAddtoCartBtnInGiftItem@1.0.0",
+	"activation_id": 2,
+	"extension_id": "501"
+}

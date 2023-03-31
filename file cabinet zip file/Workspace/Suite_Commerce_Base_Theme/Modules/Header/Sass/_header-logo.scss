@@ -1,0 +1,29 @@
+.header-logo {
+	// display: block;
+	line-height: $sc-main-nav-height;
+	height: $sc-main-nav-height;
+	margin-left:-$sc-margin-lv2;
+
+	@media (max-width: $screen-xs-min) {
+		max-width: 100%;
+		// align-items: center;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		// width: 30%;
+		margin:0px;
+	}
+}
+
+.header-logo-image {
+	width: 90%;
+	max-width: 200px;
+	max-height: auto;
+	vertical-align: middle;
+
+	@media (min-width: $screen-md-min) {
+		width: auto;
+	}
+}
+
+

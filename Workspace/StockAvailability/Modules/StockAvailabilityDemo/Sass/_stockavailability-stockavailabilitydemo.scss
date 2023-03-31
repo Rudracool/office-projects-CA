@@ -1,0 +1,54 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+// .stockavailabilitydemo-info-card {
+//     @extend .info-card;
+// }
+
+// .stockavailabilitydemo-info-card-content {
+//     @extend .info-card-content;
+//     color: $sc-color-secondary;
+//     font-weight: bold;
+// }
+.stockavailabilitydemo-info-card{
+	background: white;
+	.stockDetails{
+		text-align: center;
+	}
+
+}
+.fa-correct{
+	@extend .fa;
+	@extend %fa-check-circle;
+	font-size: 17px;
+	color:#28a745!important;
+}
+.fa-wrong{
+	@extend .fa;
+	@extend %fa-times-circle;
+	font-size: 17px;
+	color:#dc3545!important;
+}
+.cust{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.item-available-hard-core,.item-stock-is-available-or-not{
+	color: $sc-color-secondary;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.item-stock-is-available-or-not{
+	p{
+		color: $sc-color-secondary;
+		font-weight: bold;
+		text-transform: capitalize;
+	}
+}

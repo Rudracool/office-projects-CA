@@ -1,0 +1,99 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.promotion-item-image{
+	//width:300px;//320px
+	height:300px;//500px
+	@media(max-width: $screen-sm-min) {
+		//width:300px;//270px;
+		height:200px;//350px;
+	}
+	@media(min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+		//width:300px;//270px;
+		height:150px;//350px;
+	}
+}
+.promotion-items-container{
+	display: grid;
+  	/*grid:
+	'myArea myArea .  '
+	'myArea myArea .  ';*/
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	padding: 10px;
+	@media(max-width: $screen-sm-min) {
+		display: grid;
+		/*grid:
+		'myArea myArea';*/
+		grid-template-columns: auto auto;
+		grid-gap: 20px;
+		padding: 10px;
+	}
+}
+
+.promotional-item-banner-view {
+	@extend .global-views-message;
+	@extend .global-views-message-info;
+	background: $sc-color-secondary;
+	width:100%;
+	text-align: center;
+	color: $sc-button-primary-text-color;
+}
+
+.promotional-item-banner-view-close-button {
+	@extend .global-views-message-button;
+	color: $sc-color-link;
+}
+
+.promotion-item-name {
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	word-break: break-word;
+	margin-bottom: 10px;
+}
+
+.promotion-items-list-header {
+	border-top: 1px solid $sc-color-theme-border-light;
+  	padding: $sc-padding-lv3 0;
+  	/*h2{
+      font-family: $sc-font-family2;
+  	}*/
+}
+
+.promotion-items-list-empty-section {
+	padding: $sc-padding-lv8 $sc-padding-lv3 $sc-padding-lv3;
+  	text-align: center;
+}
+.promotion-banners{
+	display: inline-block;
+	max-width: fit-content;
+}
+.promo-filter-search{
+	display: flex;
+	justify-content: end;
+}
+[name="filter_by_promo_reset"]{
+	//display:none;
+	position: absolute;
+    top: 8px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #d66243;
+    right: 5px;
+    cursor: pointer;
+}
+
+.price{
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	word-break: break-word;
+}

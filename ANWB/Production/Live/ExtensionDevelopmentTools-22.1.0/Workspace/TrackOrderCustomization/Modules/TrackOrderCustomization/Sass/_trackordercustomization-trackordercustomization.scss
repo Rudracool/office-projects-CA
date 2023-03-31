@@ -1,0 +1,21 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.recordviews-tracking-url{
+	text-align: right !important;
+}
+// .custom-css-button{
+// 	padding: $sc-padding-lv2 $sc-padding-lv3;
+// 	&:hover{
+// 		color: $sc-color-link-hover;
+// 	}
+// 	&:active{
+// 		color: $sc-color-link-hover;
+// 	}
+// }

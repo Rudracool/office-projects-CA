@@ -1,0 +1,74 @@
+{
+    "name": "CheckoutCustomization",
+    "fantasyName": "Checkout Customization",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=22.1.0",
+        "SCS": ">=22.1.0"
+    },
+    "description": "Checkout Customization",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/CheckoutCustomization.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/CheckoutCustomization/Configuration/CheckoutCustomization.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/CheckoutCustomization/Sass/_checkoutcustomization-checkoutcustomization.scss"
+        },
+        "files": [
+            "Modules/CheckoutCustomization/Sass/_checkoutcustomization-checkoutcustomization.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/CheckoutCustomization/Templates/ca_checkoutcustomization_checkoutcustomization.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/CheckoutCustomization/JavaScript/CA.CheckoutCustomization.CheckoutCustomization.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/CheckoutCustomization/JavaScript/CA.CheckoutCustomization.CheckoutCustomization.js",
+                    "Modules/CheckoutCustomization/JavaScript/CheckoutCustomization.View.js",
+                    "Modules/CheckoutCustomization/JavaScript/CA.CheckoutCustomization.CheckoutCustomization.Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/CheckoutCustomization/SuiteScript/CA.CheckoutCustomization.CheckoutCustomization.js",
+        "files": [
+            "Modules/CheckoutCustomization/SuiteScript/CA.CheckoutCustomization.CheckoutCustomization.js",
+            "Modules/CheckoutCustomization/SuiteScript/CheckoutCustomization.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\CheckoutCustomization",
+    "suitescript2": {
+        "files": []
+    }
+}

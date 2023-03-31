@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "Encourage.config": {
+            "group": "extensions",
+            "subtab": "Encourage_subtab",
+            "type": "string",
+            "title": "Encourage_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

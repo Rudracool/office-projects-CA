@@ -1,0 +1,70 @@
+{
+    "name": "ReOrderItemExtPdfAndCsv",
+    "fantasyName": "Download PDF and CSV in Reorder Items",
+    "vendor": "ReorderExtensionListHeader",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">= 21.1.0"
+    },
+    "description": "Create a Pdf And Csv in Listheader via reorderitems. ",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/ReorderExtensionsListHeaderPdf.Service.ss"
+            ]
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/ReorderExtensionsListHeaderPdf/Sass/_reorderitemextpdfandcsv-reorderextensionslistheaderpdf.scss",
+            "myaccount": "Modules/ReorderExtensionsListHeaderPdf/Sass/_reorderitemextpdfandcsv-reorderextensionslistheaderpdf.scss",
+            "checkout": "Modules/ReorderExtensionsListHeaderPdf/Sass/_reorderitemextpdfandcsv-reorderextensionslistheaderpdf.scss"
+        },
+        "files": [
+            "Modules/ReorderExtensionsListHeaderPdf/Sass/_reorderitemextpdfandcsv-reorderextensionslistheaderpdf.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/ReorderExtensionsListHeaderPdf/Templates/reorderextensionlistheader_reorderitemextpdfandcsv_reorderextensionslistheaderpdf.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/ReorderExtensionsListHeaderPdf/JavaScript/ReorderExtensionListHeader.ReOrderItemExtPdfAndCsv.ReorderExtensionsListHeaderPdf.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/ReorderExtensionsListHeaderPdf/JavaScript/ReorderExtensionListHeader.ReOrderItemExtPdfAndCsv.ReorderExtensionsListHeaderPdf.js",
+                    "Modules/ReorderExtensionsListHeaderPdf/JavaScript/ReorderExtensionsListHeaderPdf.View.js",
+                    "Modules/ReorderExtensionsListHeaderPdf/JavaScript/ReorderExtensionListHeader.ReOrderItemExtPdfAndCsv.ReorderExtensionsListHeaderPdf.Model.js",
+                    "Modules/ReorderExtensionsListHeaderPdf/JavaScript/ReorderExtensionListHeader.ReOrderItemExtPdfAndCsv.ReorderExtensionsListHeaderPdf.SS2Model.js",
+                    "Modules/ReorderExtensionsListHeaderPdf/JavaScript/ReorderExtensionListHeader.ReOrderItemExtPdfAndCsv.ReorderExtensionsListHeaderPdf.Collection.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/ReorderExtensionsListHeaderPdf/SuiteScript/ReorderExtensionListHeader.ReOrderItemExtPdfAndCsv.ReorderExtensionsListHeaderPdf.js",
+        "files": [
+            "Modules/ReorderExtensionsListHeaderPdf/SuiteScript/ReorderExtensionListHeader.ReOrderItemExtPdfAndCsv.ReorderExtensionsListHeaderPdf.js",
+            "Modules/ReorderExtensionsListHeaderPdf/SuiteScript/ReorderExtensionsListHeaderPdf.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\ReOrderItemExtPdfAndCsv"
+}

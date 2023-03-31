@@ -1,0 +1,25 @@
+.animated-background {
+  background: $sc-blog-dummy-content-color;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: background-shimmer-frame;
+  animation-timing-function: linear;
+  background: linear-gradient(
+      to right,
+      $sc-blog-dummy-content-color 8%,
+      $sc-blog-dummy-content-contrasted-color 18%,
+      $sc-blog-dummy-content-color 33%);
+  background-size: 800px 104px;
+  position: relative;
+}
+
+@keyframes background-shimmer-frame {
+  0% {
+    background-position: -468px 0
+  }
+  100% {
+    background-position: 468px 0
+  }
+}
+

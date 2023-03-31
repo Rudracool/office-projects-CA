@@ -1,0 +1,107 @@
+{
+    "name": "OfferModalPopupAfterLogin",
+    "fantasyName": "Offer Modal Pop up After Login ",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": ">=21.2.0",
+        "SCA": ">=21.2.0"
+    },
+    "description": "Offer Modal Pop up has visible after login page redirection",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/OfferModalPopupAfterLogin.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/OfferModalPopupAfterLogin/Configuration/OfferModalPopupAfterLogin.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/OfferModalPopupAfterLogin/Sass/_offermodalpopupafterlogin-offermodalpopupafterlogin.scss",
+            "myaccount": "Modules/OfferModalPopupAfterLogin/Sass/_offermodalpopupafterlogin-offermodalpopupafterlogin.scss",
+            "checkout": "Modules/OfferModalPopupAfterLogin/Sass/_offermodalpopupafterlogin-offermodalpopupafterlogin.scss"
+        },
+        "files": [
+            "Modules/OfferModalPopupAfterLogin/Sass/_offermodalpopupafterlogin-offermodalpopupafterlogin.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/OfferModalPopupAfterLogin/Templates/ca_offermodalpopupafterlogin_offermodalpopupafterlogin.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/OfferModalPopupAfterLogin/Templates/ca_offermodalpopupafterlogin_offermodalpopupafterlogin.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/OfferModalPopupAfterLogin/Templates/ca_offermodalpopupafterlogin_offermodalpopupafterlogin.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/OfferModalPopupAfterLogin/JavaScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.js",
+            "myaccount": "Modules/OfferModalPopupAfterLogin/JavaScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.js",
+            "checkout": "Modules/OfferModalPopupAfterLogin/JavaScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/OfferModalPopupAfterLogin/JavaScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.js",
+                    "Modules/OfferModalPopupAfterLogin/JavaScript/OfferModalPopupAfterLogin.View.js",
+                    "Modules/OfferModalPopupAfterLogin/JavaScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.Model.js",
+                    "Modules/OfferModalPopupAfterLogin/JavaScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/OfferModalPopupAfterLogin/JavaScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.js",
+                    "Modules/OfferModalPopupAfterLogin/JavaScript/OfferModalPopupAfterLogin.View.js",
+                    "Modules/OfferModalPopupAfterLogin/JavaScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.Model.js",
+                    "Modules/OfferModalPopupAfterLogin/JavaScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/OfferModalPopupAfterLogin/JavaScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.js",
+                    "Modules/OfferModalPopupAfterLogin/JavaScript/OfferModalPopupAfterLogin.View.js",
+                    "Modules/OfferModalPopupAfterLogin/JavaScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.Model.js",
+                    "Modules/OfferModalPopupAfterLogin/JavaScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/OfferModalPopupAfterLogin/SuiteScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.js",
+        "files": [
+            "Modules/OfferModalPopupAfterLogin/SuiteScript/CA.OfferModalPopupAfterLogin.OfferModalPopupAfterLogin.js",
+            "Modules/OfferModalPopupAfterLogin/SuiteScript/OfferModalPopupAfterLogin.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\OfferModalPopupAfterLogin",
+    "suitescript2": {
+        "files": [
+            "Modules/OfferModalPopupAfterLogin/SuiteScript2/OfferModalPopupAfterLogin.Service.ss"
+        ]
+    }
+}

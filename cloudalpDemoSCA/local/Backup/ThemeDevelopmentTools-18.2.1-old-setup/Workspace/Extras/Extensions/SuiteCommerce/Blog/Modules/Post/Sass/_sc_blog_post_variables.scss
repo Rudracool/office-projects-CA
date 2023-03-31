@@ -1,0 +1,29 @@
+/*
+group({
+ "id": "posts",
+ "label": "Posts",
+ "description": "",
+ "children": [
+  "$sc-blog-post-background",
+  "$sc-blog-post-title-font-family",
+  "$sc-blog-post-title-color",
+  "$sc-blog-post-subtitle-font-family",
+  "$sc-blog-post-subtitle-color",
+  "$sc-blog-post-informative-text-font-family",
+  "$sc-blog-post-informative-text-color",
+  "$sc-blog-post-body-text-font-family",
+  "$sc-blog-post-body-text-color",
+  "$sc-blog-post-link-color"
+ ]
+})
+*/
+$sc-blog-post-background: #FFFFFF; // editable({"type": "color", "label": "Post Background"})
+$sc-blog-post-title-font-family: $sc-blog-regular-font-family; // editable({"type": "string", "label": "Title Text Font Family"})
+$sc-blog-post-title-color: $sc-color-theme-700; // editable({"type": "color", "label": "Title Text Color"})
+$sc-blog-post-subtitle-font-family: $sc-blog-regular-font-family; // editable({"type": "string", "label": "Subtitle Text Font Family"})
+$sc-blog-post-subtitle-color: $sc-color-theme-700; // editable({"type": "color", "label": "Subtitle Text Color"})
+$sc-blog-post-informative-text-font-family: $sc-blog-regular-font-family; // editable({"type": "string", "label": "Informative Text Font Family"})
+$sc-blog-post-informative-text-color: $sc-color-theme-700; // editable({"type": "color", "label": "Informative Text Color"})
+$sc-blog-post-body-text-font-family: $sc-blog-regular-font-family; // editable({"type": "string", "label": "Body Text Font Family"})
+$sc-blog-post-body-text-color: $sc-blog-regular-font-color; // editable({"type": "color", "label": "Body Text Color"})
+$sc-blog-post-link-color: $sc-color-link; // editable({"type": "color", "label": "Link Text Color"})

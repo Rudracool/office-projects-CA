@@ -1,0 +1,27 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.customcmspagelayout-info-card {
+    @extend .info-card;
+}
+
+.customcmspagelayout-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+
+.new-landing-page-row{
+	@extend .row
+}
+
+.new-landing-page-row-full-col{
+	@extend .col-md-12;
+	padding:0;
+}

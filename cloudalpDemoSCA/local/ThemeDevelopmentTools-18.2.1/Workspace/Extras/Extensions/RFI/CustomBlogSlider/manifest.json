@@ -1,0 +1,81 @@
+{
+	"name": "CustomBlogSlider",
+	"fantasyName": "CustomBlogsSlider",
+	"vendor": "RFI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "showing blogs in slider ",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/CustomBlogerSlider.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/CustomBlogerSlider/Configuration/CustomBlogerSlider.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CustomBlogerSlider/Templates/rfi_customblogslider_customblogerslider.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/CustomBlogerSlider/Sass/_customblogslider-customblogerslider.scss"
+		},
+		"files": [
+			"Modules/CustomBlogerSlider/Sass/_customblogslider-customblogerslider.scss",
+			"Modules/CustomBlogerSlider/Sass/slick-theme.scss",
+			"Modules/CustomBlogerSlider/Sass/slick.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/CustomBlogerSlider/JavaScript/RFI.CustomBlogSlider.CustomBlogerSlider.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CustomBlogerSlider/JavaScript/RFI.CustomBlogSlider.CustomBlogerSlider.js",
+					"Modules/CustomBlogerSlider/JavaScript/CustomBlogerSlider.View.js",
+					"Modules/CustomBlogerSlider/JavaScript/RFI.CustomBlogSlider.CustomBlogerSlider.Model.js",
+					"Modules/CustomBlogerSlider/JavaScript/RFI.CustomBlogSlider.CustomBlogerSlider.SS2Model.js",
+					"Modules/jquery.slick/Javascript/jquery.slick.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/CustomBlogerSlider/SuiteScript/RFI.CustomBlogSlider.CustomBlogerSlider.js",
+		"files": [
+			"Modules/CustomBlogerSlider/SuiteScript/RFI.CustomBlogSlider.CustomBlogerSlider.js",
+			"Modules/CustomBlogerSlider/SuiteScript/CustomBlogerSlider.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/CustomBlogerSlider/SuiteScript2/CustomBlogerSlider.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/rfi/CustomBlogSlider@1.0.0",
+	"activation_id": "15",
+	"extension_id": "18112"
+}

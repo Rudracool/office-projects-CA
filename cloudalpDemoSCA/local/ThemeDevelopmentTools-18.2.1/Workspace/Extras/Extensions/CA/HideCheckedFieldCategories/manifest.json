@@ -1,0 +1,103 @@
+{
+	"name": "HideCheckedFieldCategories",
+	"fantasyName": "HideCheckedFieldCategories",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "HideCheckedFieldCategories",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/HideCheckedFieldCategories.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HideCheckedFieldCategories/Templates/ca_hidecheckedfieldcategories_hidecheckedfieldcategories.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/HideCheckedFieldCategories/Templates/ca_hidecheckedfieldcategories_hidecheckedfieldcategories.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/HideCheckedFieldCategories/Templates/ca_hidecheckedfieldcategories_hidecheckedfieldcategories.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/HideCheckedFieldCategories/Sass/_hidecheckedfieldcategories-hidecheckedfieldcategories.scss",
+			"myaccount": "Modules/HideCheckedFieldCategories/Sass/_hidecheckedfieldcategories-hidecheckedfieldcategories.scss",
+			"checkout": "Modules/HideCheckedFieldCategories/Sass/_hidecheckedfieldcategories-hidecheckedfieldcategories.scss"
+		},
+		"files": [
+			"Modules/HideCheckedFieldCategories/Sass/_hidecheckedfieldcategories-hidecheckedfieldcategories.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/HideCheckedFieldCategories/JavaScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.js",
+			"myaccount": "Modules/HideCheckedFieldCategories/JavaScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.js",
+			"checkout": "Modules/HideCheckedFieldCategories/JavaScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HideCheckedFieldCategories/JavaScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.js",
+					"Modules/HideCheckedFieldCategories/JavaScript/HideCheckedFieldCategories.View.js",
+					"Modules/HideCheckedFieldCategories/JavaScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.Model.js",
+					"Modules/HideCheckedFieldCategories/JavaScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.SS2Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/HideCheckedFieldCategories/JavaScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.js",
+					"Modules/HideCheckedFieldCategories/JavaScript/HideCheckedFieldCategories.View.js",
+					"Modules/HideCheckedFieldCategories/JavaScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.Model.js",
+					"Modules/HideCheckedFieldCategories/JavaScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/HideCheckedFieldCategories/JavaScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.js",
+					"Modules/HideCheckedFieldCategories/JavaScript/HideCheckedFieldCategories.View.js",
+					"Modules/HideCheckedFieldCategories/JavaScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.Model.js",
+					"Modules/HideCheckedFieldCategories/JavaScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/HideCheckedFieldCategories/SuiteScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.js",
+		"files": [
+			"Modules/HideCheckedFieldCategories/SuiteScript/CA.HideCheckedFieldCategories.HideCheckedFieldCategories.js",
+			"Modules/HideCheckedFieldCategories/SuiteScript/HideCheckedFieldCategories.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/HideCheckedFieldCategories/SuiteScript2/HideCheckedFieldCategories.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CA/HideCheckedFieldCategories@1.0.0",
+	"activation_id": "15",
+	"extension_id": "17712"
+}

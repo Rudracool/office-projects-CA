@@ -1,0 +1,11 @@
+.cms-area-row {
+  width: 100%;
+}
+
+.cms-area-full-column-width {
+  @extend .col-sm-12;
+}
+
+.cms-area-partial-column {
+  @include col(sm-6, 0, 0);
+}
